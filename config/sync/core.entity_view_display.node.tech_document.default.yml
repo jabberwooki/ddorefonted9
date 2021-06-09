@@ -1,0 +1,93 @@
+uuid: dd13af57-5c46-43a0-8d9b-b386fc75a05c
+langcode: fr
+status: true
+dependencies:
+  config:
+    - core.entity_view_display.comment.comment_node_tech_document.default
+    - field.field.node.tech_document.body
+    - field.field.node.tech_document.comment_node_tech_document
+    - field.field.node.tech_document.field_described_location
+    - field.field.node.tech_document.field_doc_section
+    - field.field.node.tech_document.field_download_col_1
+    - field.field.node.tech_document.field_download_col_2
+    - field.field.node.tech_document.field_download_col_3
+    - field.field.node.tech_document.field_references_techniques
+    - field.field.node.tech_document.field_tech_document_type
+    - node.type.tech_document
+  module:
+    - comment
+    - entity_reference_revisions
+    - text
+    - user
+id: node.tech_document.default
+targetEntityType: node
+bundle: tech_document
+mode: default
+content:
+  body:
+    label: hidden
+    weight: 1
+    type: text_default
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  comment_node_tech_document:
+    label: hidden
+    type: comment_default
+    weight: 20
+    settings:
+      view_mode: default
+      pager_id: 0
+    third_party_settings: {  }
+    region: content
+  field_download_col_1:
+    label: hidden
+    weight: 4
+    type: entity_reference_revisions_entity_view
+    settings:
+      view_mode: full
+      link: ''
+    third_party_settings: {  }
+    region: content
+  field_download_col_2:
+    label: hidden
+    weight: 4
+    type: entity_reference_revisions_entity_view
+    settings:
+      view_mode: full
+      link: ''
+    third_party_settings: {  }
+    region: content
+  field_download_col_3:
+    label: hidden
+    weight: 33
+    type: entity_reference_revisions_entity_view
+    settings:
+      view_mode: full
+      link: ''
+    third_party_settings: {  }
+    region: content
+  field_references_techniques:
+    label: above
+    weight: 6
+    type: entity_reference_revisions_entity_view
+    settings:
+      view_mode: full
+      link: ''
+    third_party_settings: {  }
+    region: content
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  sharethis:
+    weight: 10
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden:
+  field_described_location: true
+  field_doc_section: true
+  field_tech_document_type: true
+  langcode: true

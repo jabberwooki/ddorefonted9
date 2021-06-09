@@ -1,0 +1,21 @@
+uuid: 44fc75d5-351a-43d5-840d-28de91d0f364
+langcode: fr
+status: true
+dependencies:
+  module:
+    - node
+id: node_festival
+label: 'Content - Festival'
+type: 'canonical_entities:node'
+pattern: 'spectacles/[node:field_festival_name]'
+selection_criteria:
+  -
+    id: node_type
+    bundles:
+      festival: festival
+    negate: false
+    context_mapping:
+      node: node
+selection_logic: and
+weight: 0
+relationships: {  }

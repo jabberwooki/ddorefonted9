@@ -1,0 +1,19 @@
+uuid: 2d41adde-a391-4809-a2db-20d7f0bfba6b
+langcode: fr
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_titre_niveau_4
+    - paragraphs.paragraphs_type.titre4_txt_summary_option
+id: paragraph.titre4_txt_summary_option.field_titre_niveau_4
+field_name: field_titre_niveau_4
+entity_type: paragraph
+bundle: titre4_txt_summary_option
+label: 'Titre niveau 4'
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

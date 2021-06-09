@@ -1,0 +1,64 @@
+uuid: 54bcfc6a-19fa-4ce7-a264-c775150400a4
+langcode: fr
+status: true
+dependencies:
+  config:
+    - core.entity_view_display.comment.comment_node_relpub_document.default
+    - field.field.node.relpub_document.body
+    - field.field.node.relpub_document.comment_node_relpub_document
+    - field.field.node.relpub_document.field_doc_section
+    - field.field.node.relpub_document.field_relpub_document_type
+    - node.type.relpub_document
+  module:
+    - comment
+    - options
+    - text
+    - user
+id: node.relpub_document.default
+targetEntityType: node
+bundle: relpub_document
+mode: default
+content:
+  body:
+    label: hidden
+    weight: 0
+    type: text_default
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  comment_node_relpub_document:
+    label: hidden
+    type: comment_default
+    weight: 20
+    settings:
+      view_mode: default
+      pager_id: 0
+    third_party_settings: {  }
+    region: content
+  field_doc_section:
+    label: above
+    weight: 2
+    type: entity_reference_label
+    settings:
+      link: true
+    third_party_settings: {  }
+    region: content
+  field_relpub_document_type:
+    label: inline
+    weight: 1
+    type: list_default
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  sharethis:
+    weight: 10
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden:
+  langcode: true

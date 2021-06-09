@@ -1,0 +1,46 @@
+uuid: 1196abf1-fe3c-4b66-b7e0-d64c24487a44
+langcode: fr
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.presentation_location_salles.body
+    - field.field.node.presentation_location_salles.comment_node_presentation_loca
+    - field.field.node.presentation_location_salles.field_metatag
+    - field.field.node.presentation_location_salles.field_vente_references
+    - field.field.node.presentation_location_salles.field_vente_salle
+    - field.field.node.presentation_location_salles.field_vente_services
+    - node.type.presentation_location_salles
+  module:
+    - text
+    - user
+id: node.presentation_location_salles.teaser
+targetEntityType: node
+bundle: presentation_location_salles
+mode: teaser
+content:
+  body:
+    label: hidden
+    weight: 0
+    type: text_summary_or_trimmed
+    settings:
+      trim_length: 600
+    third_party_settings: {  }
+    region: content
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  sharethis:
+    weight: 10
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden:
+  comment_node_presentation_loca: true
+  field_metatag: true
+  field_vente_references: true
+  field_vente_salle: true
+  field_vente_services: true
+  langcode: true

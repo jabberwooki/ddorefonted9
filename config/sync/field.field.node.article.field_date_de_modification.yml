@@ -1,0 +1,21 @@
+uuid: 298e6150-8638-4cc5-8e98-d6380a4861e3
+langcode: fr
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_date_de_modification
+    - node.type.article
+  module:
+    - datetime
+id: node.article.field_date_de_modification
+field_name: field_date_de_modification
+entity_type: node
+bundle: article
+label: 'Date de modification'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: datetime

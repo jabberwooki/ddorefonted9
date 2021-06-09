@@ -1,0 +1,23 @@
+uuid: 4a17c9dd-36c1-44b7-b974-b431637199e0
+langcode: fr
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_promoted
+    - node.type.news
+id: node.news.field_promoted
+field_name: field_promoted
+entity_type: node
+bundle: news
+label: 'Promu en info flash'
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: '1'
+  off_label: '0'
+field_type: boolean

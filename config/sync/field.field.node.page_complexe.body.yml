@@ -1,0 +1,23 @@
+uuid: e579f6bd-0ef0-455e-9313-6004e3abfc90
+langcode: fr
+status: true
+dependencies:
+  config:
+    - field.storage.node.body
+    - node.type.page_complexe
+  module:
+    - text
+id: node.page_complexe.body
+field_name: body
+entity_type: node
+bundle: page_complexe
+label: Body
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  display_summary: true
+  required_summary: false
+field_type: text_with_summary

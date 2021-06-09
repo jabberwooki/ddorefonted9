@@ -1,0 +1,23 @@
+uuid: 26273451-9f79-4907-9879-5ecdf5ec71e2
+langcode: fr
+status: true
+dependencies:
+  config:
+    - field.storage.node.body
+    - node.type.programmer
+  module:
+    - text
+id: node.programmer.body
+field_name: body
+entity_type: node
+bundle: programmer
+label: Description
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  display_summary: true
+  required_summary: false
+field_type: text_with_summary

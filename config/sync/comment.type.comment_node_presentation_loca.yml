@@ -1,0 +1,8 @@
+uuid: c6a7f5ca-e4b6-4f4b-b0aa-7eb4e55bd594
+langcode: fr
+status: true
+dependencies: {  }
+id: comment_node_presentation_loca
+label: 'Présentation location comment'
+target_entity_type_id: node
+description: null

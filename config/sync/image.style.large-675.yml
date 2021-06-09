@@ -1,0 +1,15 @@
+uuid: 091a0287-e215-4d44-bba9-6ce81fe89fa7
+langcode: fr
+status: true
+dependencies: {  }
+name: large-675
+label: large-675
+effects:
+  b1d07c72-a2f9-446e-a557-d9a226015b51:
+    uuid: b1d07c72-a2f9-446e-a557-d9a226015b51
+    id: image_scale
+    weight: 1
+    data:
+      width: 675
+      height: null
+      upscale: false

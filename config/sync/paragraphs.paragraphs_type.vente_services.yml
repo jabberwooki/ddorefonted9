@@ -1,0 +1,10 @@
+uuid: 14002123-ac5e-4f93-82d8-5b8562aabb10
+langcode: fr
+status: true
+dependencies: {  }
+id: vente_services
+label: 'Vente services'
+icon_uuid: null
+icon_default: null
+description: 'Migrated from field_collection field_vente_services'
+behavior_plugins: {  }

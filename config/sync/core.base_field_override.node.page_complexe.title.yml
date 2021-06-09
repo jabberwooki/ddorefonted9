@@ -1,0 +1,18 @@
+uuid: f5dd1e2a-92e3-4f45-a6ac-f4846c66f9c8
+langcode: fr
+status: true
+dependencies:
+  config:
+    - node.type.page_complexe
+id: node.page_complexe.title
+field_name: title
+entity_type: node
+bundle: page_complexe
+label: Titre
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

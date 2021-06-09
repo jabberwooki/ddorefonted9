@@ -1,0 +1,10 @@
+uuid: bbc16d78-5612-44e9-9078-16abf8e29b92
+langcode: fr
+status: true
+dependencies: {  }
+id: important_partners
+label: 'Important partners'
+icon_uuid: null
+icon_default: null
+description: 'Migrated from field_collection field_important_partners'
+behavior_plugins: {  }

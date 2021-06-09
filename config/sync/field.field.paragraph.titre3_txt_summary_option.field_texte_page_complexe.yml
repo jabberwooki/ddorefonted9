@@ -1,0 +1,21 @@
+uuid: 64d21dff-e663-427f-b1b6-74c3403b42d3
+langcode: fr
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_texte_page_complexe
+    - paragraphs.paragraphs_type.titre3_txt_summary_option
+  module:
+    - text
+id: paragraph.titre3_txt_summary_option.field_texte_page_complexe
+field_name: field_texte_page_complexe
+entity_type: paragraph
+bundle: titre3_txt_summary_option
+label: Texte
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

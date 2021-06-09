@@ -1,0 +1,8 @@
+uuid: 3d86819a-ea60-4ff8-8a14-a11852d8082e
+langcode: fr
+status: true
+dependencies: {  }
+id: comment_node_show
+label: 'Spectacle comment'
+target_entity_type_id: node
+description: null

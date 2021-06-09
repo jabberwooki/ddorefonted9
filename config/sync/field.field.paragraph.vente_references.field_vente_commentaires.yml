@@ -1,0 +1,21 @@
+uuid: ba96f4e0-123f-47ca-a9e5-a1f499ea9363
+langcode: fr
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_vente_commentaires
+    - paragraphs.paragraphs_type.vente_references
+  module:
+    - text
+id: paragraph.vente_references.field_vente_commentaires
+field_name: field_vente_commentaires
+entity_type: paragraph
+bundle: vente_references
+label: Commentaires
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

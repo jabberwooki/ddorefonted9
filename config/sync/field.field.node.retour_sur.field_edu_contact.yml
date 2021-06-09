@@ -1,0 +1,28 @@
+uuid: 8d64eab4-e4f3-4181-b72e-2bf823fea7cb
+langcode: fr
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_edu_contact
+    - node.type.retour_sur
+  module:
+    - text
+id: node.retour_sur.field_edu_contact
+field_name: field_edu_contact
+entity_type: node
+bundle: retour_sur
+label: 'Contact - Service éducatif'
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    mee:
+      resource_manager:
+        -
+          weight: 0
+    value: "<h3>Contact</h3>\r\n\r\n<p>Service éducatif Marion Blanchaud mblanchaud@domaine-do-34.eu Jessica Ramassamy jramassamy@domaine-do-34.eu</p>\r\n"
+    format: full_html
+default_value_callback: ''
+settings: {  }
+field_type: text_long

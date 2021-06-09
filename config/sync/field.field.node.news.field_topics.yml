@@ -1,0 +1,26 @@
+uuid: 30c6d0f4-44ce-442d-9a6c-55925ff580c8
+langcode: fr
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_topics
+    - node.type.news
+    - taxonomy.vocabulary.webpush_topics
+id: node.news.field_topics
+field_name: field_topics
+entity_type: node
+bundle: news
+label: Thématiques
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler_settings:
+    sort:
+      field: _none
+    target_bundles:
+      webpush_topics: webpush_topics
+  handler: 'default:taxonomy_term'
+field_type: entity_reference

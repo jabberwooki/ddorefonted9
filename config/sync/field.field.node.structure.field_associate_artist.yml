@@ -1,0 +1,23 @@
+uuid: 932f551d-d14f-4b29-bc43-d3ca1100106a
+langcode: fr
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_associate_artist
+    - node.type.structure
+id: node.structure.field_associate_artist
+field_name: field_associate_artist
+entity_type: node
+bundle: structure
+label: 'Artiste associé'
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: ''
+  off_label: ''
+field_type: boolean

@@ -1,0 +1,23 @@
+uuid: 053f3934-dba4-41b4-9603-51112348f426
+langcode: fr
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_new_window
+    - node.type.news
+id: node.news.field_new_window
+field_name: field_new_window
+entity_type: node
+bundle: news
+label: 'Lien vers nouvelle fenêtre'
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: '1'
+  off_label: '0'
+field_type: boolean

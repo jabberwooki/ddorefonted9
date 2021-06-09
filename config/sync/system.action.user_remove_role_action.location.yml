@@ -1,0 +1,14 @@
+uuid: 1d5d3417-1a7d-4f1b-a038-913a19885888
+langcode: fr
+status: true
+dependencies:
+  config:
+    - user.role.location
+  module:
+    - user
+id: user_remove_role_action.location
+label: 'Enlever le rôle location des utilisateurs sélectionnés'
+type: user
+plugin: user_remove_role_action
+configuration:
+  rid: location

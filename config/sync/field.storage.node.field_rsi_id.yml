@@ -1,0 +1,21 @@
+uuid: 97ac9b3e-d1bc-45d9-a001-43593ac43245
+langcode: und
+status: true
+dependencies:
+  module:
+    - node
+    - options
+id: node.field_rsi_id
+field_name: field_rsi_id
+entity_type: node
+type: list_string
+settings:
+  allowed_values: {  }
+  allowed_values_function: ''
+module: options
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

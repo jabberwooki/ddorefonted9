@@ -1,0 +1,19 @@
+uuid: 1d0027c0-3086-4a23-a5d6-f0bb70dd1010
+langcode: fr
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_vente_services_titre
+    - paragraphs.paragraphs_type.vente_services
+id: paragraph.vente_services.field_vente_services_titre
+field_name: field_vente_services_titre
+entity_type: paragraph
+bundle: vente_services
+label: Titre
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

@@ -1,0 +1,19 @@
+uuid: ee6cee7f-0513-454c-986a-ab9b0af6f93e
+langcode: und
+status: true
+dependencies:
+  module:
+    - node
+    - text
+id: node.field_red_frame_left
+field_name: field_red_frame_left
+entity_type: node
+type: text_long
+settings: {  }
+module: text
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

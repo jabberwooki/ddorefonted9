@@ -1,0 +1,21 @@
+uuid: 92bfc4e4-3f14-44b3-99c3-61b77b836d2f
+langcode: fr
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_lieu_generique
+    - node.type.show
+id: node.show.field_lieu_generique
+field_name: field_lieu_generique
+entity_type: node
+bundle: show
+label: Lieu
+description: 'Montpellier > domaine d''O'
+required: false
+translatable: false
+default_value:
+  -
+    value: 'Montpellier > domaine d''O'
+default_value_callback: ''
+settings: {  }
+field_type: string

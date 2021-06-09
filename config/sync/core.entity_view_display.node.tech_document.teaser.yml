@@ -1,0 +1,52 @@
+uuid: 6b429245-351e-46d6-85d0-51ecefa1470c
+langcode: fr
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.tech_document.body
+    - field.field.node.tech_document.comment_node_tech_document
+    - field.field.node.tech_document.field_described_location
+    - field.field.node.tech_document.field_doc_section
+    - field.field.node.tech_document.field_download_col_1
+    - field.field.node.tech_document.field_download_col_2
+    - field.field.node.tech_document.field_download_col_3
+    - field.field.node.tech_document.field_references_techniques
+    - field.field.node.tech_document.field_tech_document_type
+    - node.type.tech_document
+  module:
+    - text
+    - user
+id: node.tech_document.teaser
+targetEntityType: node
+bundle: tech_document
+mode: teaser
+content:
+  body:
+    label: hidden
+    weight: 1
+    type: text_summary_or_trimmed
+    settings:
+      trim_length: 200
+    third_party_settings: {  }
+    region: content
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  sharethis:
+    weight: 10
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden:
+  comment_node_tech_document: true
+  field_described_location: true
+  field_doc_section: true
+  field_download_col_1: true
+  field_download_col_2: true
+  field_download_col_3: true
+  field_references_techniques: true
+  field_tech_document_type: true
+  langcode: true

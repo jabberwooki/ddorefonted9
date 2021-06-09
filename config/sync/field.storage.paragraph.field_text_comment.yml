@@ -1,0 +1,19 @@
+uuid: b212e226-91ee-4481-9585-262b59c46404
+langcode: und
+status: true
+dependencies:
+  module:
+    - paragraphs
+    - text
+id: paragraph.field_text_comment
+field_name: field_text_comment
+entity_type: paragraph
+type: text_long
+settings: {  }
+module: text
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

@@ -1,0 +1,8 @@
+uuid: fe48639e-ac72-4f76-86b5-0fadaebd1e27
+langcode: fr
+status: true
+dependencies: {  }
+id: comment_node_page_complexe
+label: 'Page complexe comment'
+target_entity_type_id: node
+description: null

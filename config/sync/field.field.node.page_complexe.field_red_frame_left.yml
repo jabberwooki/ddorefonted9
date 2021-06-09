@@ -1,0 +1,21 @@
+uuid: 03748e8d-ea21-483c-8bdb-2c0d6fd68ff2
+langcode: fr
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_red_frame_left
+    - node.type.page_complexe
+  module:
+    - text
+id: node.page_complexe.field_red_frame_left
+field_name: field_red_frame_left
+entity_type: node
+bundle: page_complexe
+label: 'Encart rouge gauche'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

@@ -1,0 +1,20 @@
+uuid: f334b22f-9e90-4a9d-a399-25029b56ca1b
+langcode: und
+status: true
+dependencies:
+  module:
+    - node
+    - taxonomy
+id: node.field_thematique_article
+field_name: field_thematique_article
+entity_type: node
+type: entity_reference
+settings:
+  target_type: taxonomy_term
+module: core
+locked: false
+cardinality: -1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

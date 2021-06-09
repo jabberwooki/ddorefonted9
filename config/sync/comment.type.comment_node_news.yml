@@ -1,0 +1,8 @@
+uuid: 769246d6-8e90-4fed-9fe6-01081905cd90
+langcode: fr
+status: true
+dependencies: {  }
+id: comment_node_news
+label: 'Evénement comment'
+target_entity_type_id: node
+description: null

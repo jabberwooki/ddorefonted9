@@ -1,0 +1,16 @@
+uuid: 9d083d8f-58da-4f5b-ac99-d45ba58fd381
+langcode: fr
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    parent: 'main-menu:0:'
+name: Festival
+type: festival
+description: ''
+help: ''
+new_revision: false
+preview_mode: 1
+display_submitted: false

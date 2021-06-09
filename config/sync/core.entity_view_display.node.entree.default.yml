@@ -1,0 +1,48 @@
+uuid: 273cf216-7535-4342-a3a0-a30b0ba04849
+langcode: fr
+status: true
+dependencies:
+  config:
+    - core.entity_view_display.comment.comment_node_entree.default
+    - field.field.node.entree.body
+    - field.field.node.entree.comment_node_entree
+    - field.field.node.entree.field_geoloc_entry
+    - node.type.entree
+  module:
+    - comment
+    - text
+    - user
+id: node.entree.default
+targetEntityType: node
+bundle: entree
+mode: default
+content:
+  body:
+    label: hidden
+    weight: 0
+    type: text_default
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  comment_node_entree:
+    label: hidden
+    type: comment_default
+    weight: 20
+    settings:
+      view_mode: default
+      pager_id: 0
+    third_party_settings: {  }
+    region: content
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  sharethis:
+    weight: 10
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden:
+  field_geoloc_entry: true
+  langcode: true

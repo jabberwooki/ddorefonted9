@@ -1,0 +1,8 @@
+uuid: efc90785-8022-497b-af7a-76d74676114f
+langcode: en
+status: true
+dependencies: {  }
+id: menu-bottom-courtesy
+label: 'Menu bas'
+description: ''
+locked: false

@@ -1,0 +1,42 @@
+uuid: 0dd79461-c18b-49da-95c2-ac7120505fa8
+langcode: fr
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.press_document.body
+    - field.field.node.press_document.comment_node_press_document
+    - field.field.node.press_document.field_doc_section
+    - field.field.node.press_document.field_press_document_type
+    - node.type.press_document
+  module:
+    - text
+    - user
+id: node.press_document.teaser
+targetEntityType: node
+bundle: press_document
+mode: teaser
+content:
+  body:
+    label: hidden
+    weight: 0
+    type: text_summary_or_trimmed
+    settings:
+      trim_length: 600
+    third_party_settings: {  }
+    region: content
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  sharethis:
+    weight: 10
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden:
+  comment_node_press_document: true
+  field_doc_section: true
+  field_press_document_type: true
+  langcode: true

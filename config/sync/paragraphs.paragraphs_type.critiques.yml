@@ -1,0 +1,10 @@
+uuid: da451a58-e1c1-4f8f-8b17-abf41004f023
+langcode: fr
+status: true
+dependencies: {  }
+id: critiques
+label: Critiques
+icon_uuid: null
+icon_default: null
+description: 'Migrated from field_collection field_critiques'
+behavior_plugins: {  }

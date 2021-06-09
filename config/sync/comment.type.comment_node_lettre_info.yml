@@ -1,0 +1,8 @@
+uuid: 4c760f81-1260-4752-81b9-944923fc49c8
+langcode: fr
+status: true
+dependencies: {  }
+id: comment_node_lettre_info
+label: 'Lettre info comment'
+target_entity_type_id: node
+description: null

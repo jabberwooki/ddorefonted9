@@ -1,0 +1,46 @@
+uuid: 31054ff3-028f-4f0a-800e-ecdae06508dd
+langcode: fr
+status: true
+dependencies:
+  config:
+    - core.entity_view_display.comment.comment_node_programmer.default
+    - field.field.node.programmer.body
+    - field.field.node.programmer.comment_node_programmer
+    - node.type.programmer
+  module:
+    - comment
+    - text
+    - user
+id: node.programmer.default
+targetEntityType: node
+bundle: programmer
+mode: default
+content:
+  body:
+    label: hidden
+    weight: 0
+    type: text_default
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  comment_node_programmer:
+    label: hidden
+    type: comment_default
+    weight: 20
+    settings:
+      view_mode: default
+      pager_id: 0
+    third_party_settings: {  }
+    region: content
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  sharethis:
+    weight: 10
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden:
+  langcode: true

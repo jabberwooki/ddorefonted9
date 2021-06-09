@@ -1,0 +1,28 @@
+uuid: f9acde9a-dbd0-47f0-9389-2e34608b052b
+langcode: fr
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_doc_section
+    - node.type.press_document
+    - taxonomy.vocabulary.espace_pro
+id: node.press_document.field_doc_section
+field_name: field_doc_section
+entity_type: node
+bundle: press_document
+label: Rubrique
+description: ''
+required: true
+translatable: false
+default_value:
+  -
+    tid: 18
+default_value_callback: ''
+settings:
+  handler_settings:
+    sort:
+      field: _none
+    target_bundles:
+      espace_pro: espace_pro
+  handler: 'default:taxonomy_term'
+field_type: entity_reference

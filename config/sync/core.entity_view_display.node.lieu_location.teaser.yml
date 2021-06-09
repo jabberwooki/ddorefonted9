@@ -1,0 +1,38 @@
+uuid: 79bb9209-9c98-4b57-94e1-8d10dfa29853
+langcode: fr
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.lieu_location.body
+    - field.field.node.lieu_location.comment_node_lieu_location
+    - node.type.lieu_location
+  module:
+    - text
+    - user
+id: node.lieu_location.teaser
+targetEntityType: node
+bundle: lieu_location
+mode: teaser
+content:
+  body:
+    label: hidden
+    weight: 1
+    type: text_summary_or_trimmed
+    settings:
+      trim_length: 600
+    third_party_settings: {  }
+    region: content
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  sharethis:
+    weight: 10
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden:
+  comment_node_lieu_location: true
+  langcode: true

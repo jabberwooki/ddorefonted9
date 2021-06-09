@@ -1,0 +1,41 @@
+uuid: fc2a6bd4-d451-479f-b2b4-668c2411c3b1
+langcode: fr
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.list
+    - field.field.node.relpub_document.body
+    - field.field.node.relpub_document.comment_node_relpub_document
+    - field.field.node.relpub_document.field_doc_section
+    - field.field.node.relpub_document.field_relpub_document_type
+    - node.type.relpub_document
+  module:
+    - text
+    - user
+id: node.relpub_document.list
+targetEntityType: node
+bundle: relpub_document
+mode: list
+content:
+  body:
+    label: hidden
+    weight: 1
+    type: text_default
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  sharethis:
+    weight: 10
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden:
+  comment_node_relpub_document: true
+  field_doc_section: true
+  field_relpub_document_type: true
+  langcode: true

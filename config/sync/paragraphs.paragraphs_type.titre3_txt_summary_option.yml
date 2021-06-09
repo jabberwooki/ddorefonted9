@@ -1,0 +1,10 @@
+uuid: 55bf6361-745d-4d23-890a-167aeda853bc
+langcode: fr
+status: true
+dependencies: {  }
+id: titre3_txt_summary_option
+label: 'Titre3 + Texte et résumé optionnels'
+icon_uuid: null
+icon_default: null
+description: 'Migrated from paragraph bundle Titre3 + Texte et résumé optionnels'
+behavior_plugins: {  }

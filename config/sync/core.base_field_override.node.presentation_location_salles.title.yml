@@ -1,0 +1,18 @@
+uuid: fdfbb91b-60ac-431c-9ed1-60ebdbdf72b5
+langcode: fr
+status: true
+dependencies:
+  config:
+    - node.type.presentation_location_salles
+id: node.presentation_location_salles.title
+field_name: title
+entity_type: node
+bundle: presentation_location_salles
+label: Titre
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

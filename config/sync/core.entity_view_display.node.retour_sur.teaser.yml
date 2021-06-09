@@ -1,0 +1,44 @@
+uuid: 57e16e57-42a5-4af1-a74a-cac18d262d26
+langcode: fr
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.retour_sur.body
+    - field.field.node.retour_sur.comment_node_retour_sur
+    - field.field.node.retour_sur.field_critiques
+    - field.field.node.retour_sur.field_edu_contact
+    - field.field.node.retour_sur.field_retour_comments
+    - node.type.retour_sur
+  module:
+    - text
+    - user
+id: node.retour_sur.teaser
+targetEntityType: node
+bundle: retour_sur
+mode: teaser
+content:
+  body:
+    label: hidden
+    weight: 0
+    type: text_summary_or_trimmed
+    settings:
+      trim_length: 600
+    third_party_settings: {  }
+    region: content
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  sharethis:
+    weight: 10
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden:
+  comment_node_retour_sur: true
+  field_critiques: true
+  field_edu_contact: true
+  field_retour_comments: true
+  langcode: true

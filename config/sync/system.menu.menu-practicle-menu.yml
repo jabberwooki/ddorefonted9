@@ -1,0 +1,8 @@
+uuid: 19cd0020-81cd-462a-9131-75a08ebc9cb7
+langcode: en
+status: true
+dependencies: {  }
+id: menu-practicle-menu
+label: 'Practicle menu'
+description: ''
+locked: false

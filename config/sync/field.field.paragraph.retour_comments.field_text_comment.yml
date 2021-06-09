@@ -1,0 +1,21 @@
+uuid: a5b7f5a4-0bae-4dd0-8110-abe7fd63d184
+langcode: fr
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_text_comment
+    - paragraphs.paragraphs_type.retour_comments
+  module:
+    - text
+id: paragraph.retour_comments.field_text_comment
+field_name: field_text_comment
+entity_type: paragraph
+bundle: retour_comments
+label: 'Commentaire complet'
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

@@ -1,0 +1,8 @@
+uuid: 58c2676d-9fb2-4077-98bf-26c6fcdbde6c
+langcode: fr
+status: true
+dependencies: {  }
+name: 'Webpush topics'
+vid: webpush_topics
+description: 'Categorization topics for your push notifications.'
+weight: 0

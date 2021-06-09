@@ -1,0 +1,19 @@
+uuid: d771cc5f-320b-4b0c-8f48-221835bbf346
+langcode: fr
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_title_col_1
+    - paragraphs.paragraphs_type.download_col_3
+id: paragraph.download_col_3.field_title_col_1
+field_name: field_title_col_1
+entity_type: paragraph
+bundle: download_col_3
+label: 'Titre col 3'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

@@ -1,0 +1,10 @@
+uuid: 9db5a9bf-28c2-4cf7-a977-52e010e36c76
+langcode: fr
+status: true
+dependencies: {  }
+id: download_col_3
+label: 'Download col 3'
+icon_uuid: null
+icon_default: null
+description: 'Migrated from field_collection field_download_col_3'
+behavior_plugins: {  }

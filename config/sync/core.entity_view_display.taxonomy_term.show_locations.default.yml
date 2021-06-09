@@ -1,0 +1,46 @@
+uuid: 602ba785-3721-454c-8c52-ffcdb9f97d03
+langcode: fr
+status: true
+dependencies:
+  config:
+    - field.field.taxonomy_term.show_locations.field_adrress_public
+    - field.field.taxonomy_term.show_locations.field_geolocalisation
+    - field.field.taxonomy_term.show_locations.field_ls_practical
+    - field.field.taxonomy_term.show_locations.field_metatag
+    - field.field.taxonomy_term.show_locations.field_seating
+    - taxonomy.vocabulary.show_locations
+  module:
+    - text
+id: taxonomy_term.show_locations.default
+targetEntityType: taxonomy_term
+bundle: show_locations
+mode: default
+content:
+  description:
+    label: hidden
+    type: text_default
+    weight: 0
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  field_ls_practical:
+    label: hidden
+    weight: 0
+    type: text_default
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  field_seating:
+    label: above
+    weight: 2
+    type: number_integer
+    settings:
+      prefix_suffix: true
+      thousand_separator: ' '
+    third_party_settings: {  }
+    region: content
+hidden:
+  field_adrress_public: true
+  field_geolocalisation: true
+  field_metatag: true
+  langcode: true

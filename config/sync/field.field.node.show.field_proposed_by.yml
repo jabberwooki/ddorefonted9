@@ -1,0 +1,32 @@
+uuid: c077355f-0fa2-44e2-8cc4-eced67263862
+langcode: fr
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_proposed_by
+    - node.type.show
+id: node.show.field_proposed_by
+field_name: field_proposed_by
+entity_type: node
+bundle: show
+label: 'Sur proposition de'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:node'
+  handler_settings:
+    behaviors:
+      views-select-list:
+        status: 1
+    view:
+      args: {  }
+      display_name: entityreference_1
+      view_name: programmers
+    target_bundles: null
+    sort:
+      field: _none
+      direction: ASC
+field_type: entity_reference

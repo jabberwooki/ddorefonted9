@@ -1,0 +1,28 @@
+uuid: 874dbf1c-517b-423b-8f35-771900a7165c
+langcode: fr
+status: true
+dependencies:
+  config:
+    - comment.type.comment_node_presentation_loca
+    - field.field.comment.comment_node_presentation_loca.comment_body
+  module:
+    - text
+id: comment.comment_node_presentation_loca.default
+targetEntityType: comment
+bundle: comment_node_presentation_loca
+mode: default
+content:
+  comment_body:
+    label: hidden
+    weight: 0
+    type: text_default
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden:
+  langcode: true

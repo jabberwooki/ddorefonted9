@@ -1,0 +1,30 @@
+uuid: 315d07dc-ff23-48eb-9bdc-218df4c35926
+langcode: fr
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.programmer.body
+    - field.field.node.programmer.comment_node_programmer
+    - node.type.programmer
+  module:
+    - user
+id: node.programmer.teaser
+targetEntityType: node
+bundle: programmer
+mode: teaser
+content:
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  sharethis:
+    weight: 10
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden:
+  body: true
+  comment_node_programmer: true
+  langcode: true

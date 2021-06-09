@@ -1,0 +1,21 @@
+uuid: 82cd4c59-1f96-482f-9042-d14eccfc8ab5
+langcode: fr
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_link_more_infos
+    - node.type.article
+  module:
+    - text
+id: node.article.field_link_more_infos
+field_name: field_link_more_infos
+entity_type: node
+bundle: article
+label: 'Lien plus d''infos'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text

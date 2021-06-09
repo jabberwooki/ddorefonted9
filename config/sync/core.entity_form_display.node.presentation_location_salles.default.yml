@@ -1,0 +1,144 @@
+uuid: 122f2abb-4b7f-4718-9617-6ff7afd691a9
+langcode: fr
+status: true
+dependencies:
+  config:
+    - field.field.node.presentation_location_salles.body
+    - field.field.node.presentation_location_salles.comment_node_presentation_loca
+    - field.field.node.presentation_location_salles.field_metatag
+    - field.field.node.presentation_location_salles.field_vente_references
+    - field.field.node.presentation_location_salles.field_vente_salle
+    - field.field.node.presentation_location_salles.field_vente_services
+    - node.type.presentation_location_salles
+  module:
+    - comment
+    - metatag
+    - paragraphs
+    - path
+    - text
+id: node.presentation_location_salles.default
+targetEntityType: node
+bundle: presentation_location_salles
+mode: default
+content:
+  body:
+    weight: 31
+    type: text_textarea_with_summary
+    settings:
+      rows: 9
+      summary_rows: 3
+      placeholder: ''
+      show_summary: false
+    third_party_settings: {  }
+    region: content
+  comment_node_presentation_loca:
+    type: comment_default
+    weight: 20
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  created:
+    type: datetime_timestamp
+    weight: 10
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  field_metatag:
+    weight: 122
+    settings:
+      sidebar: true
+    third_party_settings: {  }
+    type: metatag_firehose
+    region: content
+  field_vente_references:
+    weight: 44
+    type: entity_reference_paragraphs
+    settings:
+      title: Paragraphe
+      title_plural: Paragraphs
+      edit_mode: open
+      add_mode: dropdown
+      form_display_mode: default
+      default_paragraph_type: ''
+    third_party_settings: {  }
+    region: content
+  field_vente_salle:
+    weight: 42
+    type: entity_reference_autocomplete
+    settings:
+      match_operator: CONTAINS
+      match_limit: 10
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    region: content
+  field_vente_services:
+    weight: 43
+    type: entity_reference_paragraphs
+    settings:
+      title: Paragraphe
+      title_plural: Paragraphs
+      edit_mode: open
+      add_mode: dropdown
+      form_display_mode: default
+      default_paragraph_type: ''
+    third_party_settings: {  }
+    region: content
+  langcode:
+    type: language_select
+    weight: 2
+    region: content
+    settings:
+      include_locked: true
+    third_party_settings: {  }
+  path:
+    type: path
+    weight: 30
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  promote:
+    type: boolean_checkbox
+    settings:
+      display_label: true
+    weight: 15
+    region: content
+    third_party_settings: {  }
+  status:
+    type: boolean_checkbox
+    settings:
+      display_label: true
+    weight: 120
+    region: content
+    third_party_settings: {  }
+  sticky:
+    type: boolean_checkbox
+    settings:
+      display_label: true
+    weight: 16
+    region: content
+    third_party_settings: {  }
+  title:
+    type: string_textfield
+    weight: -5
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  uid:
+    type: entity_reference_autocomplete
+    weight: 5
+    settings:
+      match_operator: CONTAINS
+      size: 60
+      placeholder: ''
+      match_limit: 10
+    region: content
+    third_party_settings: {  }
+  url_redirects:
+    weight: 50
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden: {  }

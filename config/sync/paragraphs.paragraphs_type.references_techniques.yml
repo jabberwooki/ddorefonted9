@@ -1,0 +1,10 @@
+uuid: 428258bf-189e-4a60-bdff-70f4e2b7443e
+langcode: fr
+status: true
+dependencies: {  }
+id: references_techniques
+label: 'References techniques'
+icon_uuid: null
+icon_default: null
+description: 'Migrated from field_collection field_references_techniques'
+behavior_plugins: {  }

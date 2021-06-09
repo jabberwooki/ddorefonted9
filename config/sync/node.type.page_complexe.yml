@@ -1,0 +1,18 @@
+uuid: 2cd485f2-5f97-4bd5-b8ba-6dd2483a5c9c
+langcode: fr
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus:
+      - main-menu
+    parent: 'main-menu:0:'
+name: 'Page complexe'
+type: page_complexe
+description: ''
+help: ''
+new_revision: false
+preview_mode: 1
+display_submitted: false

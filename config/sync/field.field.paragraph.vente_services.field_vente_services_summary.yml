@@ -1,0 +1,19 @@
+uuid: b3e8c697-b69d-4da9-a73b-102d937bd5eb
+langcode: fr
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_vente_services_summary
+    - paragraphs.paragraphs_type.vente_services
+id: paragraph.vente_services.field_vente_services_summary
+field_name: field_vente_services_summary
+entity_type: paragraph
+bundle: vente_services
+label: Résumé
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string_long

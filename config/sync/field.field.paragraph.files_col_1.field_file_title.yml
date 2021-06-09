@@ -1,0 +1,19 @@
+uuid: d1c89aea-1d05-4476-a129-76f20ed73ad2
+langcode: fr
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_file_title
+    - paragraphs.paragraphs_type.files_col_1
+id: paragraph.files_col_1.field_file_title
+field_name: field_file_title
+entity_type: paragraph
+bundle: files_col_1
+label: Titre
+description: 'Ce titre peut correspondre à plusieurs fichiers. '
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

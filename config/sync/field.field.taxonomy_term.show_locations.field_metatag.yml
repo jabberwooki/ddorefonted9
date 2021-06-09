@@ -1,0 +1,21 @@
+uuid: ab12022e-6998-4445-940e-4a36fb028038
+langcode: fr
+status: true
+dependencies:
+  config:
+    - field.storage.taxonomy_term.field_metatag
+    - taxonomy.vocabulary.show_locations
+  module:
+    - metatag
+id: taxonomy_term.show_locations.field_metatag
+field_name: field_metatag
+entity_type: taxonomy_term
+bundle: show_locations
+label: 'Meta tags'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: metatag

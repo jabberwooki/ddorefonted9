@@ -1,0 +1,18 @@
+uuid: adef8910-5766-4e73-8bbc-bd9edf7e9213
+langcode: fr
+status: true
+dependencies:
+  config:
+    - node.type.press_document
+id: node.press_document.title
+field_name: title
+entity_type: node
+bundle: press_document
+label: Intitulé
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

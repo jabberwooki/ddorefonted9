@@ -5,13 +5,24 @@ dependencies:
   config:
     - field.field.node.article.body
     - field.field.node.article.comment
+    - field.field.node.article.comment_node_article
+    - field.field.node.article.field_date_de_modification
     - field.field.node.article.field_image
+    - field.field.node.article.field_link_more_infos
+    - field.field.node.article.field_metatag
+    - field.field.node.article.field_new_window
+    - field.field.node.article.field_news_publication_date
+    - field.field.node.article.field_news_url_target
     - field.field.node.article.field_tags
+    - field.field.node.article.field_thematique_article
+    - field.field.node.article.field_visible_bas_accueil
     - image.style.thumbnail
     - node.type.article
   module:
     - comment
+    - datetime
     - image
+    - metatag
     - path
     - text
 _core:
@@ -22,27 +33,39 @@ bundle: article
 mode: default
 content:
   body:
+    weight: 3
     type: text_textarea_with_summary
-    weight: 1
-    region: content
     settings:
       rows: 9
       summary_rows: 3
       placeholder: ''
       show_summary: false
     third_party_settings: {  }
+    region: content
   comment:
     type: comment_default
     weight: 20
     region: content
     settings: {  }
     third_party_settings: {  }
+  comment_node_article:
+    type: comment_default
+    weight: 20
+    settings: {  }
+    third_party_settings: {  }
+    region: content
   created:
     type: datetime_timestamp
     weight: 10
     region: content
     settings: {  }
     third_party_settings: {  }
+  field_date_de_modification:
+    weight: 11
+    type: datetime_default
+    settings: {  }
+    third_party_settings: {  }
+    region: content
   field_image:
     type: image_image
     weight: 4
@@ -51,16 +74,65 @@ content:
       progress_indicator: throbber
       preview_image_style: thumbnail
     third_party_settings: {  }
-  field_tags:
-    type: entity_reference_autocomplete_tags
-    weight: 3
+  field_link_more_infos:
+    weight: 15
+    type: text_textfield
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
     region: content
+  field_metatag:
+    weight: 121
+    settings:
+      sidebar: true
+    third_party_settings: {  }
+    type: metatag_firehose
+    region: content
+  field_new_window:
+    weight: 13
+    type: boolean_checkbox
+    settings:
+      display_label: true
+    third_party_settings: {  }
+    region: content
+  field_news_publication_date:
+    weight: 1
+    type: datetime_default
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  field_news_url_target:
+    weight: 14
+    type: string_textfield
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    region: content
+  field_tags:
+    weight: 12
+    type: entity_reference_autocomplete
     settings:
       match_operator: CONTAINS
       match_limit: 10
       size: 60
       placeholder: ''
     third_party_settings: {  }
+    region: content
+  field_thematique_article:
+    weight: 2
+    type: options_select
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  field_visible_bas_accueil:
+    weight: 15
+    type: boolean_checkbox
+    settings:
+      display_label: true
+    third_party_settings: {  }
+    region: content
   langcode:
     type: language_select
     weight: 2
@@ -113,4 +185,9 @@ content:
       size: 60
       placeholder: ''
     third_party_settings: {  }
+  url_redirects:
+    weight: 50
+    settings: {  }
+    third_party_settings: {  }
+    region: content
 hidden: {  }

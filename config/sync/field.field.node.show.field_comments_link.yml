@@ -1,0 +1,24 @@
+uuid: 2cd2cc54-022a-48e9-ab66-dfb819db40d3
+langcode: fr
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_comments_link
+    - node.type.show
+  module:
+    - text
+id: node.show.field_comments_link
+field_name: field_comments_link
+entity_type: node
+bundle: show
+label: 'Lien commentaires'
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: '<a href="#block-disqus-disqus-comments">Commentaires</a>'
+    format: full_html
+default_value_callback: ''
+settings: {  }
+field_type: text

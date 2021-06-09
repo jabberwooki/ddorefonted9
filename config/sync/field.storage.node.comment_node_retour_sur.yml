@@ -1,0 +1,20 @@
+uuid: f64450b2-937e-4f92-bfa6-3e57c35a80e8
+langcode: fr
+status: true
+dependencies:
+  module:
+    - comment
+    - node
+id: node.comment_node_retour_sur
+field_name: comment_node_retour_sur
+entity_type: node
+type: comment
+settings:
+  comment_type: comment_node_retour_sur
+module: comment
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

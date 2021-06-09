@@ -1,0 +1,8 @@
+uuid: 6e452d6d-954b-40a2-9c66-cad34a2e4d06
+langcode: fr
+status: true
+dependencies: {  }
+id: comment_node_retour_sur
+label: 'Retour-sur comment'
+target_entity_type_id: node
+description: null

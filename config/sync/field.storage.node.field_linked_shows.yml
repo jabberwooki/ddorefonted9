@@ -1,0 +1,19 @@
+uuid: 1d130b5a-e4b5-4cc9-90bb-a8ce8b9f085f
+langcode: und
+status: true
+dependencies:
+  module:
+    - node
+id: node.field_linked_shows
+field_name: field_linked_shows
+entity_type: node
+type: entity_reference
+settings:
+  target_type: node
+module: core
+locked: false
+cardinality: -1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

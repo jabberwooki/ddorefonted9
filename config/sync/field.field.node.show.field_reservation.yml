@@ -1,0 +1,21 @@
+uuid: 2fbd2aab-2859-4033-b83b-836df4c8cc10
+langcode: fr
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_reservation
+    - node.type.show
+  module:
+    - options
+id: node.show.field_reservation
+field_name: field_reservation
+entity_type: node
+bundle: show
+label: Réservation
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string

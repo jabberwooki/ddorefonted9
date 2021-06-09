@@ -1,0 +1,21 @@
+uuid: 9be9e3a4-fd5f-46bc-9d98-51b557971bb4
+langcode: fr
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_link_more_infos
+    - node.type.news
+  module:
+    - text
+id: node.news.field_link_more_infos
+field_name: field_link_more_infos
+entity_type: node
+bundle: news
+label: 'Lien plus d''infos'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text

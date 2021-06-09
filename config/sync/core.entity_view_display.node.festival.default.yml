@@ -1,0 +1,121 @@
+uuid: 909b0cef-c365-4c87-af28-8e4fb3027355
+langcode: fr
+status: true
+dependencies:
+  config:
+    - core.entity_view_display.comment.comment_node_festival.default
+    - field.field.node.festival.body
+    - field.field.node.festival.comment_node_festival
+    - field.field.node.festival.field_calendar_archive
+    - field.field.node.festival.field_date_en_clair
+    - field.field.node.festival.field_facebook
+    - field.field.node.festival.field_festival_name
+    - field.field.node.festival.field_festival_shows
+    - field.field.node.festival.field_feuilleter_en_ligne
+    - field.field.node.festival.field_no_result
+    - field.field.node.festival.field_season
+    - field.field.node.festival.field_useful_links
+    - field.field.node.festival.field_view_archives
+    - node.type.festival
+  module:
+    - comment
+    - link
+    - text
+    - user
+id: node.festival.default
+targetEntityType: node
+bundle: festival
+mode: default
+content:
+  body:
+    label: hidden
+    weight: 9
+    type: text_default
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  comment_node_festival:
+    label: hidden
+    type: comment_default
+    weight: 20
+    settings:
+      view_mode: default
+      pager_id: 0
+    third_party_settings: {  }
+    region: content
+  field_calendar_archive:
+    label: hidden
+    weight: 7
+    type: text_default
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  field_date_en_clair:
+    label: hidden
+    weight: 9
+    type: string
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    region: content
+  field_facebook:
+    label: hidden
+    weight: 10
+    type: link
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: ''
+      target: ''
+    third_party_settings: {  }
+    region: content
+  field_festival_shows:
+    label: above
+    weight: 3
+    type: entity_reference_entity_view
+    settings:
+      view_mode: teaser
+      link: false
+    third_party_settings: {  }
+    region: content
+  field_feuilleter_en_ligne:
+    label: hidden
+    weight: 6
+    type: link
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: ''
+      target: ''
+    third_party_settings: {  }
+    region: content
+  field_view_archives:
+    label: hidden
+    weight: 9
+    type: link
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: ''
+      target: ''
+    third_party_settings: {  }
+    region: content
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  sharethis:
+    weight: 10
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden:
+  field_festival_name: true
+  field_no_result: true
+  field_season: true
+  field_useful_links: true
+  langcode: true

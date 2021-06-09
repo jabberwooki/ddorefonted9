@@ -3,11 +3,20 @@ langcode: fr
 status: true
 dependencies:
   config:
-    - core.entity_view_display.comment.comment.default
+    - core.entity_view_display.comment.comment_node_article.default
     - field.field.node.article.body
     - field.field.node.article.comment
+    - field.field.node.article.comment_node_article
+    - field.field.node.article.field_date_de_modification
     - field.field.node.article.field_image
+    - field.field.node.article.field_link_more_infos
+    - field.field.node.article.field_metatag
+    - field.field.node.article.field_new_window
+    - field.field.node.article.field_news_publication_date
+    - field.field.node.article.field_news_url_target
     - field.field.node.article.field_tags
+    - field.field.node.article.field_thematique_article
+    - field.field.node.article.field_visible_bas_accueil
     - image.style.large
     - node.type.article
   module:
@@ -23,12 +32,12 @@ bundle: article
 mode: default
 content:
   body:
-    type: text_default
+    label: hidden
     weight: 0
-    region: content
+    type: text_default
     settings: {  }
     third_party_settings: {  }
-    label: hidden
+    region: content
   comment:
     type: comment_default
     weight: 110
@@ -38,6 +47,15 @@ content:
       view_mode: default
       pager_id: 0
     third_party_settings: {  }
+  comment_node_article:
+    label: hidden
+    type: comment_default
+    weight: 20
+    settings:
+      view_mode: default
+      pager_id: 0
+    third_party_settings: {  }
+    region: content
   field_image:
     type: image
     weight: -1
@@ -47,18 +65,24 @@ content:
       image_link: ''
     third_party_settings: {  }
     label: hidden
-  field_tags:
-    type: entity_reference_label
-    weight: 10
-    region: content
-    label: above
-    settings:
-      link: true
-    third_party_settings: {  }
   links:
     weight: 100
     region: content
     settings: {  }
     third_party_settings: {  }
+  sharethis:
+    weight: 10
+    settings: {  }
+    third_party_settings: {  }
+    region: content
 hidden:
+  field_date_de_modification: true
+  field_link_more_infos: true
+  field_metatag: true
+  field_new_window: true
+  field_news_publication_date: true
+  field_news_url_target: true
+  field_tags: true
+  field_thematique_article: true
+  field_visible_bas_accueil: true
   langcode: true

@@ -1,0 +1,18 @@
+uuid: 83bb502f-60ff-4e24-814c-5b036a84679f
+langcode: fr
+status: true
+dependencies:
+  config:
+    - node.type.programmer
+id: node.programmer.title
+field_name: title
+entity_type: node
+bundle: programmer
+label: Nom
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

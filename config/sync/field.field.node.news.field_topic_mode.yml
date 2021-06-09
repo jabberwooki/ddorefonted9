@@ -1,0 +1,23 @@
+uuid: cbf7d156-6ecf-4ea4-aa76-8217149383fe
+langcode: fr
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_topic_mode
+    - node.type.news
+  module:
+    - options
+id: node.news.field_topic_mode
+field_name: field_topic_mode
+entity_type: node
+bundle: news
+label: Mode
+description: ''
+required: true
+translatable: false
+default_value:
+  -
+    value: select
+default_value_callback: ''
+settings: {  }
+field_type: list_string

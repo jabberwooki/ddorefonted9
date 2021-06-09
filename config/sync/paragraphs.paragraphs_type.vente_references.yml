@@ -1,0 +1,10 @@
+uuid: a97a32d4-4900-4a58-930d-066a6f95bc0e
+langcode: fr
+status: true
+dependencies: {  }
+id: vente_references
+label: 'Vente references'
+icon_uuid: null
+icon_default: null
+description: 'Migrated from field_collection field_vente_references'
+behavior_plugins: {  }

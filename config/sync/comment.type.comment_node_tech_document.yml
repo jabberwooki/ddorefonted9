@@ -1,0 +1,8 @@
+uuid: a4dae640-fc17-4e24-97c7-30748d0c853d
+langcode: fr
+status: true
+dependencies: {  }
+id: comment_node_tech_document
+label: 'Document technique comment'
+target_entity_type_id: node
+description: null

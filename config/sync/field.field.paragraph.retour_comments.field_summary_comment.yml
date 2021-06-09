@@ -1,0 +1,21 @@
+uuid: fd9b0137-da10-4dae-92b5-e4e35400c98c
+langcode: fr
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_summary_comment
+    - paragraphs.paragraphs_type.retour_comments
+  module:
+    - text
+id: paragraph.retour_comments.field_summary_comment
+field_name: field_summary_comment
+entity_type: paragraph
+bundle: retour_comments
+label: Résumé
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

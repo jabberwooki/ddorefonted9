@@ -1,0 +1,42 @@
+uuid: 673ebd84-4a84-419e-ae5c-5ba10c5a484e
+langcode: fr
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.lettre_info.body
+    - field.field.node.lettre_info.comment_node_lettre_info
+    - field.field.node.lettre_info.field_date_envoi
+    - field.field.node.lettre_info.field_url_mailchimp
+    - node.type.lettre_info
+  module:
+    - text
+    - user
+id: node.lettre_info.teaser
+targetEntityType: node
+bundle: lettre_info
+mode: teaser
+content:
+  body:
+    label: hidden
+    weight: 0
+    type: text_summary_or_trimmed
+    settings:
+      trim_length: 600
+    third_party_settings: {  }
+    region: content
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  sharethis:
+    weight: 10
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden:
+  comment_node_lettre_info: true
+  field_date_envoi: true
+  field_url_mailchimp: true
+  langcode: true

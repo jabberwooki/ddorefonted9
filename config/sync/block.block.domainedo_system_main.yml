@@ -1,0 +1,24 @@
+uuid: 73460b6a-592e-4ffe-87d4-c23e41c3fb76
+langcode: fr
+status: false
+dependencies:
+  module:
+    - system
+  theme:
+    - domainedo
+id: domainedo_system_main
+theme: domainedo
+region: ''
+weight: -36
+provider: null
+plugin: system_main_block
+settings:
+  id: system_main_block
+  label: ''
+  provider: system
+  label_display: '0'
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: /spectacles/tous-les-spectacles

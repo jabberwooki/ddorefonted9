@@ -1,0 +1,20 @@
+uuid: 5a2bb700-5ce3-48a5-9cc5-4cf49cb0a836
+langcode: und
+status: true
+dependencies:
+  module:
+    - node
+    - text
+id: node.field_comments_link
+field_name: field_comments_link
+entity_type: node
+type: text
+settings:
+  max_length: 255
+module: text
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

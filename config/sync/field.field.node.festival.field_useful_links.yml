@@ -1,0 +1,23 @@
+uuid: 745a5800-d3ca-4003-9e91-5b90f4ff1760
+langcode: fr
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_useful_links
+    - node.type.festival
+  module:
+    - link
+id: node.festival.field_useful_links
+field_name: field_useful_links
+entity_type: node
+bundle: festival
+label: 'Liens utiles'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  title: 2
+  link_type: 17
+field_type: link

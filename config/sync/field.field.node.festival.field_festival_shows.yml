@@ -1,0 +1,30 @@
+uuid: a35168ec-5e0f-4857-ab25-1d52e9190c3a
+langcode: fr
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_festival_shows
+    - node.type.festival
+    - node.type.show
+id: node.festival.field_festival_shows
+field_name: field_festival_shows
+entity_type: node
+bundle: festival
+label: Spectacles
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:node'
+  handler_settings:
+    behaviors:
+      views-select-list:
+        status: 0
+    sort:
+      field: title
+      direction: ASC
+    target_bundles:
+      show: show
+field_type: entity_reference

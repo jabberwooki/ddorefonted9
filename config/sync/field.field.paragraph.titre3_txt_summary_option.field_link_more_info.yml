@@ -1,0 +1,23 @@
+uuid: e22b0e5c-1939-436f-9077-c685eebbbc94
+langcode: fr
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_link_more_info
+    - paragraphs.paragraphs_type.titre3_txt_summary_option
+  module:
+    - link
+id: paragraph.titre3_txt_summary_option.field_link_more_info
+field_name: field_link_more_info
+entity_type: paragraph
+bundle: titre3_txt_summary_option
+label: 'Lien plus d''info'
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  title: 1
+  link_type: 17
+field_type: link

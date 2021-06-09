@@ -1,0 +1,8 @@
+uuid: 1f7bf1b8-8738-46d7-9503-b3b8770998be
+langcode: en
+status: true
+dependencies: {  }
+id: menu-shows-menu
+label: 'Menu Spectacles'
+description: 'Mini menu présent sur la page d''accueil au dessus du bloc des spectacles à l''affiche.'
+locked: false

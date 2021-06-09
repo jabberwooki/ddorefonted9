@@ -1,0 +1,95 @@
+uuid: 678fc95c-a280-4d2e-b461-a44c9a26f6d5
+langcode: fr
+status: true
+dependencies:
+  config:
+    - core.entity_view_display.comment.comment_node_page_complexe.default
+    - field.field.node.page_complexe.body
+    - field.field.node.page_complexe.comment_node_page_complexe
+    - field.field.node.page_complexe.field_important_partners
+    - field.field.node.page_complexe.field_metatag
+    - field.field.node.page_complexe.field_paragraphe_complexe
+    - field.field.node.page_complexe.field_red_frame_left
+    - field.field.node.page_complexe.field_secondary_partners
+    - field.field.node.page_complexe.field_white_frame_left
+    - node.type.page_complexe
+  module:
+    - comment
+    - entity_reference_revisions
+    - text
+    - user
+id: node.page_complexe.default
+targetEntityType: node
+bundle: page_complexe
+mode: default
+content:
+  body:
+    label: hidden
+    weight: 0
+    type: text_default
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  comment_node_page_complexe:
+    label: hidden
+    type: comment_default
+    weight: 20
+    settings:
+      view_mode: default
+      pager_id: 0
+    third_party_settings: {  }
+    region: content
+  field_important_partners:
+    label: hidden
+    weight: 3
+    type: entity_reference_revisions_entity_view
+    settings:
+      view_mode: full
+      link: ''
+    third_party_settings: {  }
+    region: content
+  field_paragraphe_complexe:
+    label: hidden
+    weight: 2
+    type: entity_reference_revisions_entity_view
+    settings:
+      view_mode: full
+      link: ''
+    third_party_settings: {  }
+    region: content
+  field_red_frame_left:
+    label: hidden
+    weight: 6
+    type: text_default
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  field_secondary_partners:
+    label: hidden
+    weight: 4
+    type: entity_reference_revisions_entity_view
+    settings:
+      view_mode: full
+      link: ''
+    third_party_settings: {  }
+    region: content
+  field_white_frame_left:
+    label: hidden
+    weight: 7
+    type: text_default
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  sharethis:
+    weight: 10
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden:
+  field_metatag: true
+  langcode: true

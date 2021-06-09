@@ -1,0 +1,26 @@
+uuid: c66fb36f-2922-471b-8d03-e8bc16faca88
+langcode: fr
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_described_location
+    - node.type.tech_document
+    - taxonomy.vocabulary.show_locations
+id: node.tech_document.field_described_location
+field_name: field_described_location
+entity_type: node
+bundle: tech_document
+label: 'Lieu concerné'
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler_settings:
+    sort:
+      field: _none
+    target_bundles:
+      show_locations: show_locations
+  handler: 'default:taxonomy_term'
+field_type: entity_reference

@@ -1,0 +1,10 @@
+uuid: 0587c2fc-2ac8-4bc2-875a-c9f0dc71fbdd
+langcode: fr
+status: true
+dependencies: {  }
+id: secondary_partners
+label: 'Secondary partners'
+icon_uuid: null
+icon_default: null
+description: 'Migrated from field_collection field_secondary_partners'
+behavior_plugins: {  }

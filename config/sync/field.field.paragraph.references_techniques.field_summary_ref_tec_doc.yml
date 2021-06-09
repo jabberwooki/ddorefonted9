@@ -1,0 +1,21 @@
+uuid: 2d51c548-ea98-4669-99ed-9bc7fe0f747a
+langcode: fr
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_summary_ref_tec_doc
+    - paragraphs.paragraphs_type.references_techniques
+  module:
+    - text
+id: paragraph.references_techniques.field_summary_ref_tec_doc
+field_name: field_summary_ref_tec_doc
+entity_type: paragraph
+bundle: references_techniques
+label: Résumé
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

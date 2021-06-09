@@ -1,0 +1,29 @@
+uuid: f49bafb5-04f2-456f-a3f7-b1226333fcf6
+langcode: fr
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_linked_shows
+    - node.type.show
+id: node.show.field_linked_shows
+field_name: field_linked_shows
+entity_type: node
+bundle: show
+label: 'Vous aimerez aussi'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:node'
+  handler_settings:
+    behaviors:
+      views-select-list:
+        status: 0
+    sort:
+      field: title
+      direction: ASC
+    target_bundles:
+      show: show
+field_type: entity_reference

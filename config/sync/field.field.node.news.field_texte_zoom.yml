@@ -1,0 +1,21 @@
+uuid: 41d90665-b62e-4d81-9da9-5f01b5d1f6e9
+langcode: fr
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_texte_zoom
+    - node.type.news
+  module:
+    - text
+id: node.news.field_texte_zoom
+field_name: field_texte_zoom
+entity_type: node
+bundle: news
+label: 'Texte zoom'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

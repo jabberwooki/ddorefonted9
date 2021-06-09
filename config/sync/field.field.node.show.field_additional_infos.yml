@@ -1,0 +1,21 @@
+uuid: e81a7570-f23e-4800-9cdb-9ddee3fb44e8
+langcode: fr
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_additional_infos
+    - node.type.show
+  module:
+    - text
+id: node.show.field_additional_infos
+field_name: field_additional_infos
+entity_type: node
+bundle: show
+label: 'Infos supplémentaires'
+description: 'A utiliser dans le cas où la billetterie est externalisée (PDC) ou si gratuité (Radio France) ou pour préciser tout type d''info supplémentaire'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

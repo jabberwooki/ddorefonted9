@@ -1,0 +1,8 @@
+uuid: d63d439d-ea01-4030-9bcd-83cf5705353d
+langcode: fr
+status: true
+dependencies: {  }
+name: 'Types de spectacle'
+vid: show_types
+description: ''
+weight: 0

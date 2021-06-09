@@ -1,0 +1,21 @@
+uuid: 543e7204-6e55-49b1-a01b-0eb0587a0cee
+langcode: fr
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_full
+    - node.type.show
+  module:
+    - text
+id: node.show.field_full
+field_name: field_full
+entity_type: node
+bundle: show
+label: 'Non disponible'
+description: 'Texte à afficher lorsque le spectacle est complet.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

@@ -1,0 +1,26 @@
+uuid: 4d06b2d9-e1aa-4ba9-b8e1-bd4534f56d80
+langcode: fr
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_person_dpt
+    - node.type.personne
+    - taxonomy.vocabulary.poles
+id: node.personne.field_person_dpt
+field_name: field_person_dpt
+entity_type: node
+bundle: personne
+label: Service
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler_settings:
+    sort:
+      field: _none
+    target_bundles:
+      poles: poles
+  handler: 'default:taxonomy_term'
+field_type: entity_reference

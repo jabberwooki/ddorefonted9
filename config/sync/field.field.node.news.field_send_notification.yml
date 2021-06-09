@@ -1,0 +1,23 @@
+uuid: 45a26f23-c9f3-4db1-9282-2f99fc830fc5
+langcode: fr
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_send_notification
+    - node.type.news
+id: node.news.field_send_notification
+field_name: field_send_notification
+entity_type: node
+bundle: news
+label: 'Envoyer une notification'
+description: 'Envoyer une notifications aux abonnés lors de la création de l''événement.'
+required: false
+translatable: false
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: ''
+  off_label: ''
+field_type: boolean

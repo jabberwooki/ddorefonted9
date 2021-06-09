@@ -1,0 +1,33 @@
+uuid: 182d5e48-2f54-4bc5-a827-76c782b6c15d
+langcode: fr
+status: true
+dependencies:
+  config:
+    - field.storage.node.comment_node_retour_sur
+    - node.type.retour_sur
+  module:
+    - comment
+id: node.retour_sur.comment_node_retour_sur
+field_name: comment_node_retour_sur
+entity_type: node
+bundle: retour_sur
+label: Comments
+description: ''
+required: true
+translatable: true
+default_value:
+  -
+    status: 1
+    cid: 0
+    last_comment_timestamp: 0
+    last_comment_name: null
+    last_comment_uid: 0
+    comment_count: 0
+default_value_callback: ''
+settings:
+  default_mode: 1
+  per_page: 50
+  anonymous: 0
+  form_location: true
+  preview: 1
+field_type: comment

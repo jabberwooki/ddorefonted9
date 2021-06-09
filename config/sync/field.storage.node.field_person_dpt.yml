@@ -1,0 +1,20 @@
+uuid: a2cde9ff-4127-4960-a2a5-a81be2986caa
+langcode: und
+status: true
+dependencies:
+  module:
+    - node
+    - taxonomy
+id: node.field_person_dpt
+field_name: field_person_dpt
+entity_type: node
+type: entity_reference
+settings:
+  target_type: taxonomy_term
+module: core
+locked: false
+cardinality: -1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

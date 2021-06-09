@@ -1,0 +1,18 @@
+uuid: 8490a0b6-99bd-4770-bb38-489e53dc35f5
+langcode: fr
+status: true
+dependencies:
+  config:
+    - node.type.festival
+id: node.festival.title
+field_name: title
+entity_type: node
+bundle: festival
+label: Nom
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

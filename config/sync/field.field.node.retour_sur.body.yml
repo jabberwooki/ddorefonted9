@@ -1,0 +1,23 @@
+uuid: d1b5567b-2f2f-430e-a000-a0554d2394cf
+langcode: fr
+status: true
+dependencies:
+  config:
+    - field.storage.node.body
+    - node.type.retour_sur
+  module:
+    - text
+id: node.retour_sur.body
+field_name: body
+entity_type: node
+bundle: retour_sur
+label: 'Les élèves ont participé'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  display_summary: true
+  required_summary: false
+field_type: text_with_summary

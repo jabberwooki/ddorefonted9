@@ -1,0 +1,57 @@
+uuid: 2da36faf-4374-401c-babe-c06e031e4577
+langcode: fr
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.personne.comment_node_personne
+    - field.field.node.personne.field_person_dpt
+    - field.field.node.personne.field_person_txt_1
+    - field.field.node.personne.field_person_txt_2
+    - field.field.node.personne.field_person_txt_3
+    - node.type.personne
+  module:
+    - user
+id: node.personne.teaser
+targetEntityType: node
+bundle: personne
+mode: teaser
+content:
+  field_person_txt_1:
+    label: hidden
+    weight: 6
+    type: string
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    region: content
+  field_person_txt_2:
+    label: hidden
+    weight: 7
+    type: string
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    region: content
+  field_person_txt_3:
+    label: hidden
+    weight: 8
+    type: string
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    region: content
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  sharethis:
+    weight: 10
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden:
+  comment_node_personne: true
+  field_person_dpt: true
+  langcode: true

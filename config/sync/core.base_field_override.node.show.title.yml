@@ -1,0 +1,18 @@
+uuid: bda99400-b1e6-45e9-9ca4-c55dc5305d51
+langcode: fr
+status: true
+dependencies:
+  config:
+    - node.type.show
+id: node.show.title
+field_name: title
+entity_type: node
+bundle: show
+label: Titre
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

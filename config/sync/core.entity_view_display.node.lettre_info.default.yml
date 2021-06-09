@@ -1,0 +1,71 @@
+uuid: 2eb0935d-7f57-45f0-9509-7ab971a39f76
+langcode: fr
+status: true
+dependencies:
+  config:
+    - core.entity_view_display.comment.comment_node_lettre_info.default
+    - field.field.node.lettre_info.body
+    - field.field.node.lettre_info.comment_node_lettre_info
+    - field.field.node.lettre_info.field_date_envoi
+    - field.field.node.lettre_info.field_url_mailchimp
+    - node.type.lettre_info
+  module:
+    - comment
+    - datetime
+    - link
+    - text
+    - user
+id: node.lettre_info.default
+targetEntityType: node
+bundle: lettre_info
+mode: default
+content:
+  body:
+    label: hidden
+    weight: 3
+    type: text_default
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  comment_node_lettre_info:
+    label: hidden
+    type: comment_default
+    weight: 20
+    settings:
+      view_mode: default
+      pager_id: 0
+    third_party_settings: {  }
+    region: content
+  field_date_envoi:
+    label: above
+    weight: 2
+    type: datetime_default
+    settings:
+      format_type: long
+      timezone_override: ''
+    third_party_settings: {  }
+    region: content
+  field_url_mailchimp:
+    label: hidden
+    weight: 0
+    type: link
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: ''
+      target: ''
+    third_party_settings: {  }
+    region: content
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  sharethis:
+    weight: 10
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden:
+  langcode: true

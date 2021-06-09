@@ -1,0 +1,88 @@
+uuid: bd705b0e-642e-4b40-bb04-b6ba5ed62702
+langcode: fr
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.zoom
+    - field.field.node.news.body
+    - field.field.node.news.comment_node_news
+    - field.field.node.news.field_date
+    - field.field.node.news.field_link_more_infos
+    - field.field.node.news.field_metatag
+    - field.field.node.news.field_new_window
+    - field.field.node.news.field_news_only_video
+    - field.field.node.news.field_news_publication_date
+    - field.field.node.news.field_news_url_target
+    - field.field.node.news.field_promoted
+    - field.field.node.news.field_send_notification
+    - field.field.node.news.field_texte_zoom
+    - field.field.node.news.field_topic_mode
+    - field.field.node.news.field_topics
+    - field.field.node.news.field_visible_bas_accueil
+    - field.field.node.news.field_zoom
+    - node.type.news
+  module:
+    - datetime
+    - options
+    - text
+    - user
+id: node.news.zoom
+targetEntityType: node
+bundle: news
+mode: zoom
+content:
+  body:
+    label: hidden
+    weight: 3
+    type: text_summary_or_trimmed
+    settings:
+      trim_length: 50
+    third_party_settings: {  }
+    region: content
+  field_date:
+    label: hidden
+    weight: 2
+    type: datetime_default
+    settings:
+      format_type: shows_block
+      timezone_override: ''
+    third_party_settings: {  }
+    region: content
+  field_news_only_video:
+    label: hidden
+    weight: 3
+    type: list_default
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  field_texte_zoom:
+    label: hidden
+    weight: 4
+    type: text_default
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  sharethis:
+    weight: 10
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden:
+  comment_node_news: true
+  field_link_more_infos: true
+  field_metatag: true
+  field_new_window: true
+  field_news_publication_date: true
+  field_news_url_target: true
+  field_promoted: true
+  field_send_notification: true
+  field_topic_mode: true
+  field_topics: true
+  field_visible_bas_accueil: true
+  field_zoom: true
+  langcode: true

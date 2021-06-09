@@ -1,0 +1,50 @@
+uuid: c2490417-846b-4772-b5ae-d610f431f0ba
+langcode: fr
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.page_complexe.body
+    - field.field.node.page_complexe.comment_node_page_complexe
+    - field.field.node.page_complexe.field_important_partners
+    - field.field.node.page_complexe.field_metatag
+    - field.field.node.page_complexe.field_paragraphe_complexe
+    - field.field.node.page_complexe.field_red_frame_left
+    - field.field.node.page_complexe.field_secondary_partners
+    - field.field.node.page_complexe.field_white_frame_left
+    - node.type.page_complexe
+  module:
+    - text
+    - user
+id: node.page_complexe.teaser
+targetEntityType: node
+bundle: page_complexe
+mode: teaser
+content:
+  body:
+    label: hidden
+    weight: 0
+    type: text_summary_or_trimmed
+    settings:
+      trim_length: 600
+    third_party_settings: {  }
+    region: content
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  sharethis:
+    weight: 10
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden:
+  comment_node_page_complexe: true
+  field_important_partners: true
+  field_metatag: true
+  field_paragraphe_complexe: true
+  field_red_frame_left: true
+  field_secondary_partners: true
+  field_white_frame_left: true
+  langcode: true

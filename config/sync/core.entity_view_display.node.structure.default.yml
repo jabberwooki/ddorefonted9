@@ -1,0 +1,66 @@
+uuid: 747218ac-7563-40d8-98a0-3bae6f4e795d
+langcode: fr
+status: true
+dependencies:
+  config:
+    - core.entity_view_display.comment.comment_node_structure.default
+    - field.field.node.structure.body
+    - field.field.node.structure.comment_node_structure
+    - field.field.node.structure.field_associate_artist
+    - field.field.node.structure.field_site_web
+    - field.field.node.structure.field_structure_shows
+    - field.field.node.structure.field_structure_type
+    - node.type.structure
+  module:
+    - comment
+    - link
+    - text
+    - user
+id: node.structure.default
+targetEntityType: node
+bundle: structure
+mode: default
+content:
+  body:
+    label: hidden
+    weight: 3
+    type: text_default
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  comment_node_structure:
+    label: hidden
+    type: comment_default
+    weight: 20
+    settings:
+      view_mode: default
+      pager_id: 0
+    third_party_settings: {  }
+    region: content
+  field_site_web:
+    label: inline
+    weight: 5
+    type: link
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: ''
+      target: ''
+    third_party_settings: {  }
+    region: content
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  sharethis:
+    weight: 10
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden:
+  field_associate_artist: true
+  field_structure_shows: true
+  field_structure_type: true
+  langcode: true

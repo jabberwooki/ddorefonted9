@@ -1,0 +1,23 @@
+uuid: c19b3819-2b51-4e0d-9880-aaa20bf42132
+langcode: fr
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_back_to_top_link
+    - node.type.show
+  module:
+    - text
+id: node.show.field_back_to_top_link
+field_name: field_back_to_top_link
+entity_type: node
+bundle: show
+label: 'Lien retour haut'
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: '<a href="#block-system-main">Haut</a>'
+default_value_callback: ''
+settings: {  }
+field_type: text

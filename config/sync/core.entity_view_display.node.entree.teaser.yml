@@ -1,0 +1,40 @@
+uuid: be655c63-ecb6-44fa-b2fa-50db5c894770
+langcode: fr
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.entree.body
+    - field.field.node.entree.comment_node_entree
+    - field.field.node.entree.field_geoloc_entry
+    - node.type.entree
+  module:
+    - text
+    - user
+id: node.entree.teaser
+targetEntityType: node
+bundle: entree
+mode: teaser
+content:
+  body:
+    label: hidden
+    weight: 0
+    type: text_summary_or_trimmed
+    settings:
+      trim_length: 600
+    third_party_settings: {  }
+    region: content
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  sharethis:
+    weight: 10
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden:
+  comment_node_entree: true
+  field_geoloc_entry: true
+  langcode: true

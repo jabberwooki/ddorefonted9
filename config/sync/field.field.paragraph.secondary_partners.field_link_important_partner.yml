@@ -1,0 +1,23 @@
+uuid: 20ac069f-7405-4857-a0ce-6fe83e1c0cdf
+langcode: fr
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_link_important_partner
+    - paragraphs.paragraphs_type.secondary_partners
+  module:
+    - link
+id: paragraph.secondary_partners.field_link_important_partner
+field_name: field_link_important_partner
+entity_type: paragraph
+bundle: secondary_partners
+label: Lien
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  title: 0
+  link_type: 17
+field_type: link

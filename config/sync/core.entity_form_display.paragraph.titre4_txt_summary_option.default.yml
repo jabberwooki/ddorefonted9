@@ -1,0 +1,43 @@
+uuid: 4da0197b-8477-474d-97ed-079013a5f23a
+langcode: fr
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.titre4_txt_summary_option.field_summary_page_complexe
+    - field.field.paragraph.titre4_txt_summary_option.field_texte_page_complexe
+    - field.field.paragraph.titre4_txt_summary_option.field_titre_niveau_4
+    - paragraphs.paragraphs_type.titre4_txt_summary_option
+  module:
+    - text
+id: paragraph.titre4_txt_summary_option.default
+targetEntityType: paragraph
+bundle: titre4_txt_summary_option
+mode: default
+content:
+  field_summary_page_complexe:
+    weight: 33
+    type: text_textarea
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+    region: content
+  field_texte_page_complexe:
+    weight: 34
+    type: text_textarea
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+    region: content
+  field_titre_niveau_4:
+    weight: 31
+    type: string_textfield
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    region: content
+hidden:
+  created: true
+  status: true

@@ -1,0 +1,21 @@
+uuid: 7b3bb5a1-560f-4aaf-97dc-962368fd300e
+langcode: fr
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_white_frame_left
+    - node.type.page_complexe
+  module:
+    - text
+id: node.page_complexe.field_white_frame_left
+field_name: field_white_frame_left
+entity_type: node
+bundle: page_complexe
+label: 'Encart blanc gauche'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

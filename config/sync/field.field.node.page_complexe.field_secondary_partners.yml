@@ -1,0 +1,67 @@
+uuid: 7c5a4f1f-03c0-4dda-8c1e-8ce798212d32
+langcode: fr
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_secondary_partners
+    - node.type.page_complexe
+    - paragraphs.paragraphs_type.secondary_partners
+  module:
+    - entity_reference_revisions
+id: node.page_complexe.field_secondary_partners
+field_name: field_secondary_partners
+entity_type: node
+bundle: page_complexe
+label: 'Partenaires secondaires'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler_settings:
+    negate: 0
+    target_bundles:
+      secondary_partners: secondary_partners
+    target_bundles_drag_drop:
+      critiques:
+        enabled: false
+        weight: 2
+      download_col_1:
+        enabled: false
+        weight: 3
+      download_col_2:
+        enabled: false
+        weight: 4
+      download_col_3:
+        enabled: false
+        weight: 5
+      files_col_1:
+        enabled: false
+        weight: 6
+      important_partners:
+        enabled: false
+        weight: 7
+      references_techniques:
+        enabled: false
+        weight: 8
+      retour_comments:
+        enabled: false
+        weight: 9
+      secondary_partners:
+        enabled: true
+        weight: 1
+      titre3_txt_summary_option:
+        enabled: false
+        weight: 10
+      titre4_txt_summary_option:
+        enabled: false
+        weight: 11
+      vente_references:
+        enabled: false
+        weight: 12
+      vente_services:
+        enabled: false
+        weight: 13
+  handler: 'default:paragraph'
+field_type: entity_reference_revisions

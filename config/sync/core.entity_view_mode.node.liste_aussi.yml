@@ -1,0 +1,10 @@
+uuid: da3b5ee1-2fdd-4166-902b-2f9a19ab32ae
+langcode: fr
+status: true
+dependencies:
+  module:
+    - node
+id: node.liste_aussi
+label: liste_aussi
+targetEntityType: node
+cache: true

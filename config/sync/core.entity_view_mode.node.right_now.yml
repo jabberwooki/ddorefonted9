@@ -1,0 +1,10 @@
+uuid: e3dac450-1b3c-4eaf-a102-18542421d510
+langcode: fr
+status: true
+dependencies:
+  module:
+    - node
+id: node.right_now
+label: right_now
+targetEntityType: node
+cache: true

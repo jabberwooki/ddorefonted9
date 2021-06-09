@@ -1,0 +1,19 @@
+uuid: 614fb8d3-486d-4906-ae17-e8e37fb30299
+langcode: und
+status: true
+dependencies:
+  module:
+    - paragraphs
+    - text
+id: paragraph.field_summary_page_complexe
+field_name: field_summary_page_complexe
+entity_type: paragraph
+type: text_long
+settings: {  }
+module: text
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

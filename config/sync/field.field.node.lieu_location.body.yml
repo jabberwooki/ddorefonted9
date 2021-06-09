@@ -1,0 +1,23 @@
+uuid: 694138f6-66b1-4024-ad52-0b9d0b4e695b
+langcode: fr
+status: true
+dependencies:
+  config:
+    - field.storage.node.body
+    - node.type.lieu_location
+  module:
+    - text
+id: node.lieu_location.body
+field_name: body
+entity_type: node
+bundle: lieu_location
+label: Body
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  display_summary: true
+  required_summary: false
+field_type: text_with_summary

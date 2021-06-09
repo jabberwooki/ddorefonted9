@@ -1,0 +1,10 @@
+uuid: d4aacd9c-5d15-4f74-8fb4-f2b80ddf004b
+langcode: fr
+status: true
+dependencies:
+  module:
+    - node
+id: node.frontpage_block_mobile
+label: frontpage_block_mobile
+targetEntityType: node
+cache: true

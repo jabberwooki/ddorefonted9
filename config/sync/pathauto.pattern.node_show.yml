@@ -1,0 +1,21 @@
+uuid: 99e71ef0-1499-4ca1-99f5-d998c9719faf
+langcode: fr
+status: true
+dependencies:
+  module:
+    - node
+id: node_show
+label: 'Content - Spectacle'
+type: 'canonical_entities:node'
+pattern: 'spectacles/tous-les-spectacles/[node:title]'
+selection_criteria:
+  -
+    id: node_type
+    bundles:
+      show: show
+    negate: false
+    context_mapping:
+      node: node
+selection_logic: and
+weight: 0
+relationships: {  }

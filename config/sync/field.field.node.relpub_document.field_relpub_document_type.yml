@@ -1,0 +1,21 @@
+uuid: 644c16e6-670f-43b1-b2bc-4aabc5323810
+langcode: fr
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_relpub_document_type
+    - node.type.relpub_document
+  module:
+    - options
+id: node.relpub_document.field_relpub_document_type
+field_name: field_relpub_document_type
+entity_type: node
+bundle: relpub_document
+label: Catégorie
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string

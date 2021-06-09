@@ -1,0 +1,60 @@
+uuid: 77a8b6ac-67ab-4c5c-8ed0-617fffdaac78
+langcode: fr
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.frontpage_block
+    - field.field.node.article.body
+    - field.field.node.article.comment
+    - field.field.node.article.comment_node_article
+    - field.field.node.article.field_date_de_modification
+    - field.field.node.article.field_image
+    - field.field.node.article.field_link_more_infos
+    - field.field.node.article.field_metatag
+    - field.field.node.article.field_new_window
+    - field.field.node.article.field_news_publication_date
+    - field.field.node.article.field_news_url_target
+    - field.field.node.article.field_tags
+    - field.field.node.article.field_thematique_article
+    - field.field.node.article.field_visible_bas_accueil
+    - node.type.article
+  module:
+    - text
+    - user
+id: node.article.frontpage_block
+targetEntityType: node
+bundle: article
+mode: frontpage_block
+content:
+  body:
+    label: hidden
+    weight: 2
+    type: text_summary_or_trimmed
+    settings:
+      trim_length: 117
+    third_party_settings: {  }
+    region: content
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  sharethis:
+    weight: 10
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden:
+  comment: true
+  comment_node_article: true
+  field_date_de_modification: true
+  field_image: true
+  field_link_more_infos: true
+  field_metatag: true
+  field_new_window: true
+  field_news_publication_date: true
+  field_news_url_target: true
+  field_tags: true
+  field_thematique_article: true
+  field_visible_bas_accueil: true
+  langcode: true

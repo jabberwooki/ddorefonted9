@@ -1,0 +1,8 @@
+uuid: 8a36872e-1614-40b7-bb8e-e61db2a1f2e8
+langcode: fr
+status: true
+dependencies: {  }
+id: comment_node_programmer
+label: 'Programmateur comment'
+target_entity_type_id: node
+description: null

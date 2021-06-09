@@ -1,0 +1,23 @@
+uuid: 00d0fa20-5952-45c3-a0f5-e55ee67fa6e9
+langcode: fr
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_url_mailchimp
+    - node.type.lettre_info
+  module:
+    - link
+id: node.lettre_info.field_url_mailchimp
+field_name: field_url_mailchimp
+entity_type: node
+bundle: lettre_info
+label: 'URL Mailchimp'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  title: 2
+  link_type: 17
+field_type: link

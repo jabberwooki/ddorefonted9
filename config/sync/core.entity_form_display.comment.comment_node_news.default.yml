@@ -1,0 +1,36 @@
+uuid: ae5814f4-6650-44d5-b32b-6d0a30373f28
+langcode: fr
+status: true
+dependencies:
+  config:
+    - comment.type.comment_node_news
+    - field.field.comment.comment_node_news.comment_body
+  module:
+    - text
+id: comment.comment_node_news.default
+targetEntityType: comment
+bundle: comment_node_news
+mode: default
+content:
+  author:
+    weight: -2
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  comment_body:
+    weight: 0
+    type: text_textarea
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+    region: content
+  langcode:
+    type: language_select
+    weight: 2
+    region: content
+    settings:
+      include_locked: true
+    third_party_settings: {  }
+hidden:
+  subject: true

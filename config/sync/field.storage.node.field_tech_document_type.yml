@@ -1,0 +1,27 @@
+uuid: 0efac3d2-05ef-4111-86da-64449f08dcc6
+langcode: und
+status: true
+dependencies:
+  module:
+    - node
+    - options
+id: node.field_tech_document_type
+field_name: field_tech_document_type
+entity_type: node
+type: list_string
+settings:
+  allowed_values:
+    -
+      value: plan
+      label: Plans
+    -
+      value: fiche
+      label: 'Fiches techniques'
+  allowed_values_function: ''
+module: options
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

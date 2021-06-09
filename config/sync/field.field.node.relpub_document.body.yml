@@ -1,0 +1,23 @@
+uuid: 700acc32-7479-4e74-9f4c-7aa839047fec
+langcode: fr
+status: true
+dependencies:
+  config:
+    - field.storage.node.body
+    - node.type.relpub_document
+  module:
+    - text
+id: node.relpub_document.body
+field_name: body
+entity_type: node
+bundle: relpub_document
+label: Description
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  display_summary: true
+  required_summary: false
+field_type: text_with_summary

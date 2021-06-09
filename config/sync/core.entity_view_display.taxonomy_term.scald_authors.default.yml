@@ -1,0 +1,31 @@
+uuid: dbc6499d-d552-491c-b987-68dfdc4a8131
+langcode: fr
+status: true
+dependencies:
+  config:
+    - field.field.taxonomy_term.scald_authors.scald_author_url
+    - taxonomy.vocabulary.scald_authors
+  module:
+    - text
+id: taxonomy_term.scald_authors.default
+targetEntityType: taxonomy_term
+bundle: scald_authors
+mode: default
+content:
+  description:
+    label: hidden
+    type: text_default
+    weight: 0
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  scald_author_url:
+    label: above
+    weight: 0
+    type: string
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    region: content
+hidden:
+  langcode: true

@@ -1,0 +1,19 @@
+uuid: 2fbaa6b4-3fb4-431b-b3cf-e5a2b56d63ea
+langcode: und
+status: true
+dependencies:
+  module:
+    - node
+    - text
+id: node.field_offline
+field_name: field_offline
+entity_type: node
+type: text_long
+settings: {  }
+module: text
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

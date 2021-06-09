@@ -1,0 +1,19 @@
+uuid: a46bd8af-8e45-4cc2-9f04-53bb7dc74e37
+langcode: fr
+status: true
+dependencies:
+  config:
+    - field.storage.taxonomy_term.field_adrress_public
+    - taxonomy.vocabulary.show_locations
+id: taxonomy_term.show_locations.field_adrress_public
+field_name: field_adrress_public
+entity_type: taxonomy_term
+bundle: show_locations
+label: 'Adresse pour le public'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

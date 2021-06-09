@@ -1,0 +1,23 @@
+uuid: 8505788c-d194-462e-b1a2-327f10f1f5b0
+langcode: fr
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_press_document_type
+    - node.type.press_document
+  module:
+    - options
+id: node.press_document.field_press_document_type
+field_name: field_press_document_type
+entity_type: node
+bundle: press_document
+label: Catégorie
+description: ''
+required: true
+translatable: false
+default_value:
+  -
+    value: dossier
+default_value_callback: ''
+settings: {  }
+field_type: list_string

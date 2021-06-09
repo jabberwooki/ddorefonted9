@@ -1,0 +1,26 @@
+uuid: aca49824-d7c6-4bf0-ab31-e2992ec1b21f
+langcode: fr
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_location
+    - node.type.show
+    - taxonomy.vocabulary.show_locations
+id: node.show.field_location
+field_name: field_location
+entity_type: node
+bundle: show
+label: Lieu
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler_settings:
+    sort:
+      field: _none
+    target_bundles:
+      show_locations: show_locations
+  handler: 'default:taxonomy_term'
+field_type: entity_reference

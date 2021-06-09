@@ -1,0 +1,21 @@
+uuid: ab30f864-88ae-49fc-95bc-5e4e8e730536
+langcode: fr
+status: true
+dependencies:
+  module:
+    - node
+id: node_news
+label: 'Content - Evénement'
+type: 'canonical_entities:node'
+pattern: 'zoom/[node:title]'
+selection_criteria:
+  -
+    id: node_type
+    bundles:
+      news: news
+    negate: false
+    context_mapping:
+      node: node
+selection_logic: and
+weight: 0
+relationships: {  }

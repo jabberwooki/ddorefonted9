@@ -1,0 +1,19 @@
+uuid: fb49dcb3-03ca-417d-9b23-3dcf7e5ec139
+langcode: fr
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_vente_reference_url
+    - paragraphs.paragraphs_type.vente_references
+id: paragraph.vente_references.field_vente_reference_url
+field_name: field_vente_reference_url
+entity_type: paragraph
+bundle: vente_references
+label: 'URL du lien'
+description: 'Sous la forme http://www.sitedelareference.com'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

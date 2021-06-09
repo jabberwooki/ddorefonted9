@@ -1,0 +1,19 @@
+uuid: 7d18a6a6-49ed-40ff-b3f3-842bea5a268e
+langcode: und
+status: true
+dependencies:
+  module:
+    - paragraphs
+    - text
+id: paragraph.field_vente_commentaires
+field_name: field_vente_commentaires
+entity_type: paragraph
+type: text_long
+settings: {  }
+module: text
+locked: false
+cardinality: -1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

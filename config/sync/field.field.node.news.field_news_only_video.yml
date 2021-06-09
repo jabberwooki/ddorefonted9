@@ -1,0 +1,23 @@
+uuid: 8c1a3f72-02ec-482b-985c-cb5d82c97c1a
+langcode: fr
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_news_only_video
+    - node.type.news
+id: node.news.field_news_only_video
+field_name: field_news_only_video
+entity_type: node
+bundle: news
+label: 'Vidéo seule'
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: '1'
+  off_label: '0'
+field_type: boolean

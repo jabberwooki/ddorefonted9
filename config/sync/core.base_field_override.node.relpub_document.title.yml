@@ -1,0 +1,18 @@
+uuid: 9a1b7c07-319f-4340-b969-dcb855cac45e
+langcode: fr
+status: true
+dependencies:
+  config:
+    - node.type.relpub_document
+id: node.relpub_document.title
+field_name: title
+entity_type: node
+bundle: relpub_document
+label: Intitulé
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

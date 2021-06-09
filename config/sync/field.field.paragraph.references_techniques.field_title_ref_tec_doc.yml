@@ -1,0 +1,19 @@
+uuid: 33991875-ebbf-4dcb-985e-b9f4b3161811
+langcode: fr
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_title_ref_tec_doc
+    - paragraphs.paragraphs_type.references_techniques
+id: paragraph.references_techniques.field_title_ref_tec_doc
+field_name: field_title_ref_tec_doc
+entity_type: paragraph
+bundle: references_techniques
+label: Titre
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

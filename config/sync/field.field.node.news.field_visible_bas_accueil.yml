@@ -1,0 +1,23 @@
+uuid: 861c53c9-a805-4522-81db-69e69b1b05c2
+langcode: fr
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_visible_bas_accueil
+    - node.type.news
+id: node.news.field_visible_bas_accueil
+field_name: field_visible_bas_accueil
+entity_type: node
+bundle: news
+label: 'Visible zoom diaporama'
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 1
+default_value_callback: ''
+settings:
+  on_label: ''
+  off_label: ''
+field_type: boolean

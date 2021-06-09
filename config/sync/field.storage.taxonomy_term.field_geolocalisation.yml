@@ -1,0 +1,20 @@
+uuid: 35ad8448-c1b1-4e58-9b8a-8363cbfe4471
+langcode: und
+status: true
+dependencies:
+  module:
+    - geofield
+    - taxonomy
+id: taxonomy_term.field_geolocalisation
+field_name: field_geolocalisation
+entity_type: taxonomy_term
+type: geofield
+settings:
+  backend: geofield_backend_default
+module: geofield
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

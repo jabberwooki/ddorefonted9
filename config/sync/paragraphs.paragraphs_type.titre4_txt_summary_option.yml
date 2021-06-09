@@ -1,0 +1,10 @@
+uuid: 87b77c35-d474-4185-984d-da0192970627
+langcode: fr
+status: true
+dependencies: {  }
+id: titre4_txt_summary_option
+label: 'Titre 4 + Texte et résumé optionnels'
+icon_uuid: null
+icon_default: null
+description: 'Migrated from paragraph bundle Titre 4 + Texte et résumé optionnels'
+behavior_plugins: {  }

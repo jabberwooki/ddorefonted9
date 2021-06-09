@@ -1,0 +1,18 @@
+uuid: d8c9fd71-c331-4c9e-ad72-4b3ba57e0579
+langcode: fr
+status: true
+dependencies:
+  config:
+    - node.type.lieu_location
+id: node.lieu_location.title
+field_name: title
+entity_type: node
+bundle: lieu_location
+label: Titre
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

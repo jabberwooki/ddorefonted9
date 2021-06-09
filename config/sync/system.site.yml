@@ -1,10 +1,10 @@
 uuid: 3b2b4094-018c-410f-902d-23ff9160bd34
 name: 'Domaine d''O'
-mail: christophe.espiau@gmail.com
-slogan: ''
+mail: mbrunel@domaine-do-34.eu
+slogan: 'Spectacles, festivals et sorties à Montpellier - Théâtre, Musique, Cirque, Danse, Cinéma'
 page:
-  403: ''
-  404: ''
+  403: /
+  404: /
   front: /node
 admin_compact_mode: false
 weight_select_max: 100

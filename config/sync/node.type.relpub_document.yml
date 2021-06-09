@@ -1,0 +1,11 @@
+uuid: 4b814f18-54aa-4975-b1ee-76b4b338ae7c
+langcode: fr
+status: true
+dependencies: {  }
+name: 'Document RP'
+type: relpub_document
+description: 'Documents à l''attention des enseignants (Relations publiques).'
+help: ''
+new_revision: false
+preview_mode: 1
+display_submitted: false

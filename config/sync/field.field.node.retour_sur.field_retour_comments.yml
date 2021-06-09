@@ -1,0 +1,67 @@
+uuid: ebe18ff9-9166-4491-a0c3-582a49ac0651
+langcode: fr
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_retour_comments
+    - node.type.retour_sur
+    - paragraphs.paragraphs_type.retour_comments
+  module:
+    - entity_reference_revisions
+id: node.retour_sur.field_retour_comments
+field_name: field_retour_comments
+entity_type: node
+bundle: retour_sur
+label: 'les élèves ont commenté'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler_settings:
+    negate: 0
+    target_bundles:
+      retour_comments: retour_comments
+    target_bundles_drag_drop:
+      critiques:
+        enabled: false
+        weight: 2
+      download_col_1:
+        enabled: false
+        weight: 3
+      download_col_2:
+        enabled: false
+        weight: 4
+      download_col_3:
+        enabled: false
+        weight: 5
+      files_col_1:
+        enabled: false
+        weight: 6
+      important_partners:
+        enabled: false
+        weight: 7
+      references_techniques:
+        enabled: false
+        weight: 8
+      retour_comments:
+        enabled: true
+        weight: 1
+      secondary_partners:
+        enabled: false
+        weight: 9
+      titre3_txt_summary_option:
+        enabled: false
+        weight: 10
+      titre4_txt_summary_option:
+        enabled: false
+        weight: 11
+      vente_references:
+        enabled: false
+        weight: 12
+      vente_services:
+        enabled: false
+        weight: 13
+  handler: 'default:paragraph'
+field_type: entity_reference_revisions

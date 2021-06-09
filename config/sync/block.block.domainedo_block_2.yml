@@ -1,0 +1,30 @@
+uuid: 36ea768a-f7f3-44a0-bc23-7789233852bd
+langcode: fr
+status: false
+dependencies:
+  content:
+    - 'block_content:basic:91a7edba-5e46-4e17-878d-355d89685032'
+  module:
+    - block_content
+    - system
+  theme:
+    - domainedo
+id: domainedo_block_2
+theme: domainedo
+region: ''
+weight: -35
+provider: null
+plugin: 'block_content:91a7edba-5e46-4e17-878d-355d89685032'
+settings:
+  id: 'block_content:91a7edba-5e46-4e17-878d-355d89685032'
+  label: '<none>'
+  provider: block_content
+  label_display: '0'
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: /domaine-do/equipe

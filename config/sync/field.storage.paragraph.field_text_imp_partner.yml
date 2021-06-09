@@ -1,0 +1,19 @@
+uuid: 04376556-ce4c-45ee-b1b2-59703cffd81e
+langcode: und
+status: true
+dependencies:
+  module:
+    - paragraphs
+    - text
+id: paragraph.field_text_imp_partner
+field_name: field_text_imp_partner
+entity_type: paragraph
+type: text_long
+settings: {  }
+module: text
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

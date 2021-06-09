@@ -1,0 +1,46 @@
+uuid: 991bf1b6-6806-4202-96d7-da764fc470b5
+langcode: fr
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.structure.body
+    - field.field.node.structure.comment_node_structure
+    - field.field.node.structure.field_associate_artist
+    - field.field.node.structure.field_site_web
+    - field.field.node.structure.field_structure_shows
+    - field.field.node.structure.field_structure_type
+    - node.type.structure
+  module:
+    - text
+    - user
+id: node.structure.teaser
+targetEntityType: node
+bundle: structure
+mode: teaser
+content:
+  body:
+    label: hidden
+    weight: 0
+    type: text_summary_or_trimmed
+    settings:
+      trim_length: 600
+    third_party_settings: {  }
+    region: content
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  sharethis:
+    weight: 10
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden:
+  comment_node_structure: true
+  field_associate_artist: true
+  field_site_web: true
+  field_structure_shows: true
+  field_structure_type: true
+  langcode: true

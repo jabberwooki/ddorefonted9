@@ -1,0 +1,23 @@
+uuid: c6a2a6cb-c183-404a-b9b8-57bf4bf836e9
+langcode: fr
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_season
+    - node.type.festival
+id: node.festival.field_season
+field_name: field_season
+entity_type: node
+bundle: festival
+label: Saison
+description: 'Saisir l''année du festival. Un festival d''hiver étant à cheval sur 2 années, ne saisir que la première année. Par exemple, pour le festival d''hiver 2013/2014, saisir "2013".'
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  max: null
+  min: null
+  prefix: ''
+  suffix: ''
+field_type: integer

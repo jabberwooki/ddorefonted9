@@ -1,0 +1,19 @@
+uuid: e8cd9fdf-55d9-44ae-b7a9-14be6d3ff7f1
+langcode: fr
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.paragraph.paragraphs_editor_preview
+    - field.field.paragraph.titre4_txt_summary_option.field_summary_page_complexe
+    - field.field.paragraph.titre4_txt_summary_option.field_texte_page_complexe
+    - field.field.paragraph.titre4_txt_summary_option.field_titre_niveau_4
+    - paragraphs.paragraphs_type.titre4_txt_summary_option
+id: paragraph.titre4_txt_summary_option.paragraphs_editor_preview
+targetEntityType: paragraph
+bundle: titre4_txt_summary_option
+mode: paragraphs_editor_preview
+content: {  }
+hidden:
+  field_summary_page_complexe: true
+  field_texte_page_complexe: true
+  field_titre_niveau_4: true

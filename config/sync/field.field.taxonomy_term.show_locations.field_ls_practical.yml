@@ -1,0 +1,23 @@
+uuid: ec296dba-79cc-4a0d-a1dc-20a2e340cfa1
+langcode: fr
+status: true
+dependencies:
+  config:
+    - field.storage.taxonomy_term.field_ls_practical
+    - taxonomy.vocabulary.show_locations
+  module:
+    - text
+id: taxonomy_term.show_locations.field_ls_practical
+field_name: field_ls_practical
+entity_type: taxonomy_term
+bundle: show_locations
+label: Pratique
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: "<ul>\r\n\t<li>Le théâtre Jean-Claude Carrière se situe au nord du domaine d'O.</li>\r\n\t<li><a href=\"#scald-video\">Voir la vidéo</a></li>\r\n\t<li><a href=\"#geolocalisation\">Localiser sur une carte</a></li>\r\n</ul>"
+default_value_callback: ''
+settings: {  }
+field_type: text_long

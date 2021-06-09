@@ -1,0 +1,24 @@
+uuid: 0b1a9b58-fcaa-41f2-bdb5-d4077bdafe4f
+langcode: fr
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_no_result
+    - node.type.festival
+  module:
+    - text
+id: node.festival.field_no_result
+field_name: field_no_result
+entity_type: node
+bundle: festival
+label: 'Pas de résultat'
+description: ''
+required: true
+translatable: false
+default_value:
+  -
+    value: "<div class=\"views-row views-row-2 views-row-even\">\r\n<div class=\"views-field views-field-field-no-result\">\r\n<div class=\"field-content\">&nbsp;</div>\r\n</div>\r\n</div>\r\n"
+    format: full_html
+default_value_callback: ''
+settings: {  }
+field_type: text_long

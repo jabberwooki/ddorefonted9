@@ -1,0 +1,28 @@
+uuid: fcec7939-89c1-400c-95ea-1e219a8f516b
+langcode: fr
+status: true
+dependencies:
+  config:
+    - comment.type.comment_node_page_complexe
+    - field.field.comment.comment_node_page_complexe.comment_body
+  module:
+    - text
+id: comment.comment_node_page_complexe.default
+targetEntityType: comment
+bundle: comment_node_page_complexe
+mode: default
+content:
+  comment_body:
+    label: hidden
+    weight: 0
+    type: text_default
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden:
+  langcode: true

@@ -1,0 +1,11 @@
+uuid: 0764ba45-a59e-4caa-ab73-2184e59a4161
+langcode: fr
+status: true
+dependencies: {  }
+name: 'Document Presse'
+type: press_document
+description: 'Documents à l''attention de la presse (dossiers, ...).'
+help: ''
+new_revision: false
+preview_mode: 1
+display_submitted: false

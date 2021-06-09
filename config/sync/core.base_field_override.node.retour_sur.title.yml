@@ -1,0 +1,18 @@
+uuid: c0ec6c2d-41f8-42ed-b7cc-6467d3b60ede
+langcode: fr
+status: true
+dependencies:
+  config:
+    - node.type.retour_sur
+id: node.retour_sur.title
+field_name: title
+entity_type: node
+bundle: retour_sur
+label: Titre
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

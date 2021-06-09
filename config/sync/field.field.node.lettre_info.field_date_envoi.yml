@@ -1,0 +1,21 @@
+uuid: a508991a-6518-44bf-81f1-fdff404a4cc4
+langcode: fr
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_date_envoi
+    - node.type.lettre_info
+  module:
+    - datetime
+id: node.lettre_info.field_date_envoi
+field_name: field_date_envoi
+entity_type: node
+bundle: lettre_info
+label: 'Date d''envoi'
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: datetime

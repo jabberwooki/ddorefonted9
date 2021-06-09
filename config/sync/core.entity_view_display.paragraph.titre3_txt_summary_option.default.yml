@@ -1,0 +1,53 @@
+uuid: 576b4ef0-faf3-4797-8f1d-b979c8c7bc28
+langcode: fr
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.titre3_txt_summary_option.field_link_more_info
+    - field.field.paragraph.titre3_txt_summary_option.field_summary_page_complexe
+    - field.field.paragraph.titre3_txt_summary_option.field_texte_page_complexe
+    - field.field.paragraph.titre3_txt_summary_option.field_titre_niveau_3
+    - paragraphs.paragraphs_type.titre3_txt_summary_option
+  module:
+    - link
+    - text
+id: paragraph.titre3_txt_summary_option.default
+targetEntityType: paragraph
+bundle: titre3_txt_summary_option
+mode: default
+content:
+  field_link_more_info:
+    label: hidden
+    weight: 3
+    type: link
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: ''
+      target: ''
+    third_party_settings: {  }
+    region: content
+  field_summary_page_complexe:
+    label: hidden
+    weight: 2
+    type: text_default
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  field_texte_page_complexe:
+    label: hidden
+    weight: 3
+    type: text_default
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  field_titre_niveau_3:
+    label: hidden
+    weight: 3
+    type: string
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    region: content
+hidden: {  }

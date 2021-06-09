@@ -1,0 +1,67 @@
+uuid: 76c48dfd-dbf5-4c26-a436-b5f0334aa1ca
+langcode: fr
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_download_col_3
+    - node.type.tech_document
+    - paragraphs.paragraphs_type.download_col_3
+  module:
+    - entity_reference_revisions
+id: node.tech_document.field_download_col_3
+field_name: field_download_col_3
+entity_type: node
+bundle: tech_document
+label: 'Téléchargement col 3'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler_settings:
+    negate: 0
+    target_bundles:
+      download_col_3: download_col_3
+    target_bundles_drag_drop:
+      critiques:
+        enabled: false
+        weight: 2
+      download_col_1:
+        enabled: false
+        weight: 3
+      download_col_2:
+        enabled: false
+        weight: 4
+      download_col_3:
+        enabled: true
+        weight: 1
+      files_col_1:
+        enabled: false
+        weight: 5
+      important_partners:
+        enabled: false
+        weight: 6
+      references_techniques:
+        enabled: false
+        weight: 7
+      retour_comments:
+        enabled: false
+        weight: 8
+      secondary_partners:
+        enabled: false
+        weight: 9
+      titre3_txt_summary_option:
+        enabled: false
+        weight: 10
+      titre4_txt_summary_option:
+        enabled: false
+        weight: 11
+      vente_references:
+        enabled: false
+        weight: 12
+      vente_services:
+        enabled: false
+        weight: 13
+  handler: 'default:paragraph'
+field_type: entity_reference_revisions

@@ -1,0 +1,21 @@
+uuid: 147b46ca-1594-49af-8081-a93c2a2941d0
+langcode: fr
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_rsi_id
+    - node.type.show
+  module:
+    - options
+id: node.show.field_rsi_id
+field_name: field_rsi_id
+entity_type: node
+bundle: show
+label: 'Identifiant billetterie'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string

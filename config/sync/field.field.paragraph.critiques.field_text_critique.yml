@@ -1,0 +1,21 @@
+uuid: cb2daa09-8f6e-4fcc-b4ef-bb4d484308a8
+langcode: fr
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_text_critique
+    - paragraphs.paragraphs_type.critiques
+  module:
+    - text
+id: paragraph.critiques.field_text_critique
+field_name: field_text_critique
+entity_type: paragraph
+bundle: critiques
+label: 'Critique complète'
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

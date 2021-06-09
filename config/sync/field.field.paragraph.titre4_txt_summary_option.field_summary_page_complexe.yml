@@ -1,0 +1,21 @@
+uuid: 6b68e56a-7f6b-4f98-9d63-2e2833e2e367
+langcode: fr
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_summary_page_complexe
+    - paragraphs.paragraphs_type.titre4_txt_summary_option
+  module:
+    - text
+id: paragraph.titre4_txt_summary_option.field_summary_page_complexe
+field_name: field_summary_page_complexe
+entity_type: paragraph
+bundle: titre4_txt_summary_option
+label: Résumé
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

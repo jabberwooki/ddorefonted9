@@ -1,0 +1,457 @@
+uuid: 912cc8b8-0a4a-4b53-a71c-8e99a5d0ec16
+langcode: fr
+status: true
+dependencies:
+  config:
+    - field.field.node.show.body
+    - field.field.node.show.comment_node_show
+    - field.field.node.show.field_additional_infos
+    - field.field.node.show.field_back_to_top_link
+    - field.field.node.show.field_boxoffice_url
+    - field.field.node.show.field_by
+    - field.field.node.show.field_casting
+    - field.field.node.show.field_casting_link
+    - field.field.node.show.field_coming_soon
+    - field.field.node.show.field_comments_link
+    - field.field.node.show.field_coproduction
+    - field.field.node.show.field_duration
+    - field.field.node.show.field_entrance
+    - field.field.node.show.field_festival
+    - field.field.node.show.field_from
+    - field.field.node.show.field_full
+    - field.field.node.show.field_lieu_generique
+    - field.field.node.show.field_linked_shows
+    - field.field.node.show.field_location
+    - field.field.node.show.field_mapado_apislug
+    - field.field.node.show.field_mapado_dates_ids
+    - field.field.node.show.field_mapado_ticketing
+    - field.field.node.show.field_metatag
+    - field.field.node.show.field_minimum_age
+    - field.field.node.show.field_offline
+    - field.field.node.show.field_partenariats
+    - field.field.node.show.field_photos_link
+    - field.field.node.show.field_price
+    - field.field.node.show.field_production
+    - field.field.node.show.field_promoted
+    - field.field.node.show.field_proposed_by
+    - field.field.node.show.field_reimbursement
+    - field.field.node.show.field_reservation
+    - field.field.node.show.field_restauration
+    - field.field.node.show.field_rsi_id
+    - field.field.node.show.field_show_dates
+    - field.field.node.show.field_show_dump_age
+    - field.field.node.show.field_show_type
+    - field.field.node.show.field_sound_link
+    - field.field.node.show.field_subtitle
+    - field.field.node.show.field_video_link
+    - field.field.node.show.field_zoom
+    - node.type.show
+  module:
+    - comment
+    - datetime
+    - link
+    - metatag
+    - path
+    - term_reference_tree
+    - text
+id: node.show.default
+targetEntityType: node
+bundle: show
+mode: default
+content:
+  body:
+    weight: 14
+    type: text_textarea_with_summary
+    settings:
+      rows: 9
+      summary_rows: 3
+      placeholder: ''
+      show_summary: false
+    third_party_settings: {  }
+    region: content
+  comment_node_show:
+    type: comment_default
+    weight: 20
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  created:
+    type: datetime_timestamp
+    weight: 10
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  field_additional_infos:
+    weight: 25
+    type: text_textarea
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+    region: content
+  field_back_to_top_link:
+    weight: 44
+    type: text_textfield
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    region: content
+  field_boxoffice_url:
+    weight: 28
+    type: link_default
+    settings:
+      placeholder_url: ''
+      placeholder_title: ''
+    third_party_settings: {  }
+    region: content
+  field_by:
+    weight: 9
+    type: entity_reference_autocomplete
+    settings:
+      match_operator: CONTAINS
+      match_limit: 10
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    region: content
+  field_casting:
+    weight: 15
+    type: text_textarea
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+    region: content
+  field_casting_link:
+    weight: 33
+    type: text_textfield
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    region: content
+  field_coming_soon:
+    weight: 29
+    type: text_textarea
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+    region: content
+  field_comments_link:
+    weight: 42
+    type: text_textfield
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    region: content
+  field_coproduction:
+    weight: 17
+    type: text_textarea
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+    region: content
+  field_duration:
+    weight: 19
+    type: string_textfield
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    region: content
+  field_entrance:
+    weight: 21
+    type: options_buttons
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  field_festival:
+    weight: 7
+    type: entity_reference_autocomplete
+    settings:
+      match_operator: CONTAINS
+      match_limit: 10
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    region: content
+  field_from:
+    weight: 8
+    type: string_textfield
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    region: content
+  field_full:
+    weight: 30
+    type: text_textarea
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+    region: content
+  field_lieu_generique:
+    weight: 5
+    type: string_textfield
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    region: content
+  field_linked_shows:
+    weight: 45
+    type: entity_reference_autocomplete
+    settings:
+      match_operator: CONTAINS
+      match_limit: 10
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    region: content
+  field_location:
+    weight: 6
+    type: term_reference_tree
+    settings:
+      start_minimized: true
+      leaves_only: false
+      select_parents: false
+      cascading_selection: 0
+      max_depth: 0
+    third_party_settings: {  }
+    region: content
+  field_mapado_apislug:
+    weight: 46
+    type: string_textfield
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    region: content
+  field_mapado_dates_ids:
+    weight: 48
+    type: string_textfield
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    region: content
+  field_mapado_ticketing:
+    weight: 47
+    type: string_textfield
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    region: content
+  field_metatag:
+    weight: 122
+    settings:
+      sidebar: true
+    third_party_settings: {  }
+    type: metatag_firehose
+    region: content
+  field_minimum_age:
+    weight: 22
+    type: number
+    settings:
+      placeholder: ''
+    third_party_settings: {  }
+    region: content
+  field_offline:
+    weight: 32
+    type: text_textarea
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+    region: content
+  field_partenariats:
+    weight: 18
+    type: text_textarea
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+    region: content
+  field_photos_link:
+    weight: 40
+    type: text_textfield
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    region: content
+  field_price:
+    weight: 20
+    type: text_textfield
+    settings:
+      size: 255
+      placeholder: ''
+    third_party_settings: {  }
+    region: content
+  field_production:
+    weight: 16
+    type: text_textarea
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+    region: content
+  field_promoted:
+    weight: 12
+    type: boolean_checkbox
+    settings:
+      display_label: true
+    third_party_settings: {  }
+    region: content
+  field_proposed_by:
+    weight: 3
+    type: entity_reference_autocomplete
+    settings:
+      match_operator: CONTAINS
+      match_limit: 10
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    region: content
+  field_reimbursement:
+    weight: 31
+    type: text_textarea
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+    region: content
+  field_reservation:
+    weight: 26
+    type: options_buttons
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  field_restauration:
+    weight: 24
+    type: text_textarea
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+    region: content
+  field_rsi_id:
+    weight: 27
+    type: options_select
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  field_show_dates:
+    weight: 4
+    type: datetime_default
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  field_show_dump_age:
+    weight: 23
+    type: boolean_checkbox
+    settings:
+      display_label: true
+    third_party_settings: {  }
+    region: content
+  field_show_type:
+    weight: 2
+    type: options_select
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  field_sound_link:
+    weight: 39
+    type: text_textfield
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    region: content
+  field_subtitle:
+    weight: 1
+    type: string_textfield
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    region: content
+  field_video_link:
+    weight: 35
+    type: text_textfield
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    region: content
+  field_zoom:
+    weight: 13
+    type: boolean_checkbox
+    settings:
+      display_label: true
+    third_party_settings: {  }
+    region: content
+  langcode:
+    type: language_select
+    weight: 2
+    region: content
+    settings:
+      include_locked: true
+    third_party_settings: {  }
+  path:
+    type: path
+    weight: 30
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  promote:
+    type: boolean_checkbox
+    settings:
+      display_label: true
+    weight: 15
+    region: content
+    third_party_settings: {  }
+  status:
+    type: boolean_checkbox
+    settings:
+      display_label: true
+    weight: 120
+    region: content
+    third_party_settings: {  }
+  sticky:
+    type: boolean_checkbox
+    settings:
+      display_label: true
+    weight: 16
+    region: content
+    third_party_settings: {  }
+  title:
+    type: string_textfield
+    weight: -5
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  uid:
+    type: entity_reference_autocomplete
+    weight: 5
+    settings:
+      match_operator: CONTAINS
+      size: 60
+      placeholder: ''
+      match_limit: 10
+    region: content
+    third_party_settings: {  }
+  url_redirects:
+    weight: 50
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden: {  }

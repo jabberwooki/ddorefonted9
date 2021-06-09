@@ -1,0 +1,19 @@
+uuid: c71d1222-5341-4dc9-81ee-51f0b502f0ee
+langcode: und
+status: true
+dependencies:
+  module:
+    - node
+    - text
+id: node.field_restauration
+field_name: field_restauration
+entity_type: node
+type: text_long
+settings: {  }
+module: text
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

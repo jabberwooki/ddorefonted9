@@ -1,0 +1,23 @@
+uuid: 8fa9f24f-e501-4f53-b391-833ade2986ac
+langcode: fr
+status: true
+dependencies:
+  config:
+    - field.storage.node.body
+    - node.type.festival
+  module:
+    - text
+id: node.festival.body
+field_name: body
+entity_type: node
+bundle: festival
+label: Description
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  display_summary: true
+  required_summary: false
+field_type: text_with_summary

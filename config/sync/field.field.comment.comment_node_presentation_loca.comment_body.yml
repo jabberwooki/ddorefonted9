@@ -1,0 +1,21 @@
+uuid: 701a50f8-1253-49e1-ad5f-7d92d2e9b51b
+langcode: fr
+status: true
+dependencies:
+  config:
+    - comment.type.comment_node_presentation_loca
+    - field.storage.comment.comment_body
+  module:
+    - text
+id: comment.comment_node_presentation_loca.comment_body
+field_name: comment_body
+entity_type: comment
+bundle: comment_node_presentation_loca
+label: Comment
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

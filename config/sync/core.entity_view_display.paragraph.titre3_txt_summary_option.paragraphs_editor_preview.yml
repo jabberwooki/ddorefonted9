@@ -1,0 +1,21 @@
+uuid: 96915ad2-8ec8-4c16-aa0f-03798c2f9dce
+langcode: fr
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.paragraph.paragraphs_editor_preview
+    - field.field.paragraph.titre3_txt_summary_option.field_link_more_info
+    - field.field.paragraph.titre3_txt_summary_option.field_summary_page_complexe
+    - field.field.paragraph.titre3_txt_summary_option.field_texte_page_complexe
+    - field.field.paragraph.titre3_txt_summary_option.field_titre_niveau_3
+    - paragraphs.paragraphs_type.titre3_txt_summary_option
+id: paragraph.titre3_txt_summary_option.paragraphs_editor_preview
+targetEntityType: paragraph
+bundle: titre3_txt_summary_option
+mode: paragraphs_editor_preview
+content: {  }
+hidden:
+  field_link_more_info: true
+  field_summary_page_complexe: true
+  field_texte_page_complexe: true
+  field_titre_niveau_3: true

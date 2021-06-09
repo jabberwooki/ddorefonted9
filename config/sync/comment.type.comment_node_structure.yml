@@ -1,0 +1,8 @@
+uuid: c45b13b9-acea-4a87-b279-c44970b3c623
+langcode: fr
+status: true
+dependencies: {  }
+id: comment_node_structure
+label: 'Structure comment'
+target_entity_type_id: node
+description: null

@@ -1,0 +1,18 @@
+uuid: 7ba76910-4336-40b3-ab3e-e41ce4791038
+langcode: fr
+status: true
+dependencies:
+  config:
+    - node.type.lettre_info
+id: node.lettre_info.title
+field_name: title
+entity_type: node
+bundle: lettre_info
+label: Titre
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

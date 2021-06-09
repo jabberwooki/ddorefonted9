@@ -1,0 +1,58 @@
+uuid: ffb83646-776d-4262-ae75-117e46f3d006
+langcode: fr
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.festival.body
+    - field.field.node.festival.comment_node_festival
+    - field.field.node.festival.field_calendar_archive
+    - field.field.node.festival.field_date_en_clair
+    - field.field.node.festival.field_facebook
+    - field.field.node.festival.field_festival_name
+    - field.field.node.festival.field_festival_shows
+    - field.field.node.festival.field_feuilleter_en_ligne
+    - field.field.node.festival.field_no_result
+    - field.field.node.festival.field_season
+    - field.field.node.festival.field_useful_links
+    - field.field.node.festival.field_view_archives
+    - node.type.festival
+  module:
+    - text
+    - user
+id: node.festival.teaser
+targetEntityType: node
+bundle: festival
+mode: teaser
+content:
+  body:
+    label: hidden
+    weight: 0
+    type: text_summary_or_trimmed
+    settings:
+      trim_length: 600
+    third_party_settings: {  }
+    region: content
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  sharethis:
+    weight: 10
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden:
+  comment_node_festival: true
+  field_calendar_archive: true
+  field_date_en_clair: true
+  field_facebook: true
+  field_festival_name: true
+  field_festival_shows: true
+  field_feuilleter_en_ligne: true
+  field_no_result: true
+  field_season: true
+  field_useful_links: true
+  field_view_archives: true
+  langcode: true

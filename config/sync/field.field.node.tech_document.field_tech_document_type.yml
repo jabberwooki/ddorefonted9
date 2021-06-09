@@ -1,0 +1,21 @@
+uuid: f0b88e90-48b4-4038-a4ad-d7589444ba68
+langcode: fr
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_tech_document_type
+    - node.type.tech_document
+  module:
+    - options
+id: node.tech_document.field_tech_document_type
+field_name: field_tech_document_type
+entity_type: node
+bundle: tech_document
+label: Catégorie
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string

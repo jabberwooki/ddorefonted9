@@ -1,0 +1,21 @@
+uuid: b6657255-07a1-4a7f-8e6a-1dd50bfcea74
+langcode: fr
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_text_imp_partner
+    - paragraphs.paragraphs_type.important_partners
+  module:
+    - text
+id: paragraph.important_partners.field_text_imp_partner
+field_name: field_text_imp_partner
+entity_type: paragraph
+bundle: important_partners
+label: Texte
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

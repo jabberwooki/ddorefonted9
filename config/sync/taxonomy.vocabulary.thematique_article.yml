@@ -1,0 +1,8 @@
+uuid: 7ac21c06-67fd-4e44-835c-40c759979215
+langcode: fr
+status: true
+dependencies: {  }
+name: 'Thématique article'
+vid: thematique_article
+description: ''
+weight: 0

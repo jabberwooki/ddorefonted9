@@ -1,0 +1,8 @@
+uuid: 09a2d87f-af05-4129-abba-152bfba20daa
+langcode: fr
+status: true
+dependencies: {  }
+id: comment_node_relpub_document
+label: 'Document RP comment'
+target_entity_type_id: node
+description: null

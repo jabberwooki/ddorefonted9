@@ -1,0 +1,19 @@
+uuid: f7c548b7-c6be-4e93-8240-d49f4758d4b9
+langcode: fr
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_file_text
+    - paragraphs.paragraphs_type.files_col_1
+id: paragraph.files_col_1.field_file_text
+field_name: field_file_text
+entity_type: paragraph
+bundle: files_col_1
+label: Texte
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

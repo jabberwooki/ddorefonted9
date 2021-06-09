@@ -1,0 +1,79 @@
+uuid: 78b532ff-a958-404f-a37f-c09047dff5c6
+langcode: fr
+status: true
+dependencies:
+  config:
+    - core.entity_view_display.comment.comment_node_presentation_loca.default
+    - field.field.node.presentation_location_salles.body
+    - field.field.node.presentation_location_salles.comment_node_presentation_loca
+    - field.field.node.presentation_location_salles.field_metatag
+    - field.field.node.presentation_location_salles.field_vente_references
+    - field.field.node.presentation_location_salles.field_vente_salle
+    - field.field.node.presentation_location_salles.field_vente_services
+    - node.type.presentation_location_salles
+  module:
+    - comment
+    - entity_reference_revisions
+    - text
+    - user
+id: node.presentation_location_salles.default
+targetEntityType: node
+bundle: presentation_location_salles
+mode: default
+content:
+  body:
+    label: hidden
+    weight: 0
+    type: text_default
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  comment_node_presentation_loca:
+    label: hidden
+    type: comment_default
+    weight: 20
+    settings:
+      view_mode: default
+      pager_id: 0
+    third_party_settings: {  }
+    region: content
+  field_vente_references:
+    label: hidden
+    weight: 6
+    type: entity_reference_revisions_entity_view
+    settings:
+      view_mode: full
+      link: ''
+    third_party_settings: {  }
+    region: content
+  field_vente_salle:
+    label: hidden
+    weight: 3
+    type: entity_reference_entity_view
+    settings:
+      view_mode: teaser
+      link: false
+    third_party_settings: {  }
+    region: content
+  field_vente_services:
+    label: hidden
+    weight: 5
+    type: entity_reference_revisions_entity_view
+    settings:
+      view_mode: full
+      link: ''
+    third_party_settings: {  }
+    region: content
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  sharethis:
+    weight: 10
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden:
+  field_metatag: true
+  langcode: true

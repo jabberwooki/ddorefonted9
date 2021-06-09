@@ -1,0 +1,19 @@
+uuid: 8c130a52-a4e8-4f25-b527-61c10365ce44
+langcode: fr
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus:
+      - main-menu
+      - menu-top-courtesy-nav
+    parent: 'main-menu:0:'
+name: 'Lettre info'
+type: lettre_info
+description: ''
+help: ''
+new_revision: false
+preview_mode: 1
+display_submitted: false
